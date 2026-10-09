@@ -1,4 +1,3 @@
-
 const express = require('express');
 const db = require('../db');
 const repo = require('../db/actionsRepo');
@@ -8,6 +7,7 @@ const { explainAction } = require('../agent/explain');
 
 const router = express.Router();
 
+// Analyze inventory and save new findings as pending actions.
 router.post('/analyze', async (req, res, next) => {
   try {
     const snapshot = loadSnapshot(db);
@@ -37,7 +37,7 @@ router.post('/analyze', async (req, res, next) => {
 
       if (key) pendingKeys.add(key);
 
-      // Use AI when configured; retain the deterministic fallback otherwise.
+      // Use AI when available; keep the fallback if it fails.
       const explanation = await explainAction(action);
 
       if (explanation) {
@@ -51,6 +51,7 @@ router.post('/analyze', async (req, res, next) => {
   }
 });
 
+// Chat functionality is not implemented yet.
 router.post('/ask', (req, res) => {
   res.status(501).json({
     error: 'Not implemented yet'
