@@ -3,6 +3,10 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
+const helmet = require('helmet');
+
+const { requestLog } = require('./middleware/requestLog');
+const opsRoutes = require('./routes/ops');
 
 const db = require('./db');
 const { seedIfEmpty } = require('./db/seed');
@@ -13,6 +17,18 @@ const agentRoutes = require('./routes/agent');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
+
+app.set('trust proxy', 1);
+
+app.use(
+  helmet({
+    crossOriginResourcePolicy: {
+      policy: 'cross-origin',
+    },
+  })
+);
+
+app.use(requestLog);
 
 // Configure CORS for the frontend.
 const allowedOrigins = (
@@ -29,8 +45,7 @@ app.use(
 );
 
 // Parse incoming JSON requests.
-app.use(express.json());
-
+app.use(express.json({ limit: '10kb' }));
 // Ensure the database has demo data when starting with an empty database.
 seedIfEmpty();
 
@@ -46,6 +61,7 @@ app.get('/api/health', (req, res) => {
 app.use('/api', dataRoutes);
 app.use('/api/actions', actionsRoutes);
 app.use('/api/agent', agentRoutes);
+app.use('/api', opsRoutes);
 
 // Handle unknown routes.
 app.use((req, res) => {
@@ -73,6 +89,10 @@ app.use((err, req, res, next) => {
   return res.status(500).json({
     error: 'Internal server error'
   });
+});
+
+process.on('unhandledRejection', (reason) => {
+  console.error('Unhandled promise rejection:', reason);
 });
 
 // Start the server.
