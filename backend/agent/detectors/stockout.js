@@ -168,7 +168,7 @@ function evaluateStockout({
   const key = `stock:${sku}:${location}`;
 
   if (options.length === 0) {
-    const score = 110 - Math.min(runway, 14) * 5;
+    const score = Math.min(100, 110 - Math.min(runway, 14) * 5);
 
     return makeFinding({
       kind: 'stockout_risk',
@@ -211,7 +211,7 @@ function evaluateStockout({
   const kind = mismatch ? 'supplier_mismatch' : 'stockout_risk';
   const severity = runway <= 3 || unavoidableGap ? 'high' : 'medium';
   const score =
-    100 - Math.min(runway, 14) * 5 + (unavoidableGap ? 10 : 0);
+    Math.min(100, 100 - Math.min(runway, 14) * 5 + (unavoidableGap ? 10 : 0));
 
   let reason;
 
@@ -324,3 +324,5 @@ function detectStockout(snapshot) {
 }
 
 module.exports = { evaluateStockout, detectStockout };
+
+
