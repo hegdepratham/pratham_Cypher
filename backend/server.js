@@ -6,6 +6,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 
 const { requestLog } = require('./middleware/requestLog');
+const { rateLimit } = require('./middleware/rateLimit');
 const opsRoutes = require('./routes/ops');
 
 const db = require('./db');
@@ -29,6 +30,7 @@ app.use(
 );
 
 app.use(requestLog);
+app.use('/api', rateLimit({ windowMs: 60 * 1000, max: 100 }));
 
 // Configure CORS for the frontend.
 const allowedOrigins = (
