@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
-    "seed": "node db/seed.js",
-    "smoke": "node scripts/smoke.js"
-  },
+  "dev": "nodemon server.js",
+  "start": "node server.js",
+  "seed": "node db/seed.js",
+  "smoke": "node scripts/smoke.js",
+  "test": "node --test"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
