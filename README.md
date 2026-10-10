@@ -1,152 +1,65 @@
-﻿# Kaveri Spares Agent
+# Kaveri Spares Agent
 
-Work in progress. Cypher 2026, Challenge 01: The Spare Parts Desk.
+Cypher 2026 · Challenge 01: The Spare Parts Desk.
 
-\## Backend Setup
+An agent that reads Kaveri Spares & Hydraulics stock, sales, supplier and purchase-order data every morning, finds the problems that matter today, compares real options with numbers, and drafts a PO or transfer for the Head of Purchasing to approve or reject.
 
+## What is included
 
+- Deterministic agent engine with stockout, demand-change, overdue-PO, and slow-moving detections
+- Transfer-before-buy logic with option comparison and rationale
+- SQLite-backed backend API and action approval flow
+- Groq-powered explanation layer with grounded-number validation
+- Ask-the-agent feature using a data pack and guardrails
+- Frontend dashboard for viewing scheduled actions and decisions
+- Docker and CI setup for deployment preparation
 
-The backend is built with Node.js, Express, and SQLite using `better-sqlite3`.
+## Run locally
 
-
-
-\### Prerequisites
-
-
-
-\* Node.js and npm installed.
-
-
-
-\### Installation
-
-
-
-Open a terminal in the backend directory:
-
-
-
-```powershell
+```bash
+git clone https://github.com/hegdepratham/pratham_Cypher.git
+cd pratham_Cypher
 
 cd backend
-
+cp .env.example .env
 npm install
-
-```
-
-
-
-\### Environment Configuration
-
-
-
-Create a `.env` file inside the `backend` directory using `.env.example` as a reference.
-
-
-
-Configure the following variables:
-
-
-
-\* `PORT=4000`
-
-\* `FRONTEND\_ORIGIN=http://localhost:5173`
-
-\* `DB\_PATH=` (optional; leave empty to use the default database location)
-
-\* `GROQ\_API\_KEY=` (configure when required by the AI integration)
-
-
-
-Do not commit the `.env` file or API keys to Git.
-
-
-
-\### Run the Backend
-
-
-
-Start the development server:
-
-
-
-```powershell
-
+npm run seed
 npm run dev
 
+cd ../frontend
+cp .env.example .env
+npm install
+npm run dev
 ```
 
+## Environment variables
 
+Backend (`backend/.env`):
+- `PORT=4000`
+- `FRONTEND_ORIGIN=http://localhost:5173`
+- `DB_PATH=` (optional)
+- `GROQ_API_KEY=`
+- `GROQ_MODEL=openai/gpt-oss-120b`
+- `ADMIN_TOKEN=`
 
-The backend runs at `http://localhost:4000` by default.
+Frontend (`frontend/.env`):
+- `VITE_API_URL=http://localhost:4000`
+- `VITE_USE_MOCK=false`
 
+## Core endpoints
 
+- `GET /api/health`
+- `GET /api/products`
+- `GET /api/inventory`
+- `GET /api/sales`
+- `GET /api/suppliers`
+- `GET /api/purchase-orders`
+- `POST /api/agent/analyze`
+- `POST /api/agent/ask`
+- `GET /api/actions`
+- `POST /api/actions/:id/approve`
+- `POST /api/actions/:id/reject`
 
-Check the health endpoint:
+## Deployment note
 
-
-
-```text
-
-http://localhost:4000/api/health
-
-```
-
-
-
-\### Available Commands
-
-
-
-| Command         | Purpose                                   |
-
-| --------------- | ----------------------------------------- |
-
-| `npm run dev`   | Start the development server with nodemon |
-
-| `npm start`     | Start the server                          |
-
-| `npm run seed`  | Seed the database with demo data          |
-
-| `npm run smoke` | Run backend smoke tests                   |
-
-
-
-\### API Endpoints
-
-
-
-| Method | Endpoint                   | Purpose                          |
-
-| ------ | -------------------------- | -------------------------------- |
-
-| GET    | `/api/health`              | Check backend health             |
-
-| GET    | `/api/products`            | Retrieve products                |
-
-| GET    | `/api/inventory`           | Retrieve inventory               |
-
-| GET    | `/api/suppliers`           | Retrieve suppliers               |
-
-| GET    | `/api/purchase-orders`     | Retrieve purchase orders         |
-
-| GET    | `/api/sales`               | Retrieve sales data              |
-
-| GET    | `/api/actions`             | List drafted actions             |
-
-| GET    | `/api/actions/:id`         | Retrieve one action              |
-
-| POST   | `/api/actions/:id/approve` | Approve an action                |
-
-| POST   | `/api/actions/:id/reject`  | Reject an action                 |
-
-| POST   | `/api/agent/analyze`       | Analysis endpoint placeholder    |
-
-| POST   | `/api/agent/ask`           | AI question endpoint placeholder |
-
-
-
-\*\*Note:\*\* The agent endpoints are placeholders until the analysis and AI integration is completed.
-
-
-
+The app is structured for deployment on Render (backend) and Vercel (frontend), with env vars configured separately and no secrets committed to the repo.
