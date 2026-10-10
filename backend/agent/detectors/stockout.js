@@ -1,12 +1,5 @@
-﻿const C = require('../config');
-const {
-  round0,
-  round1,
-  inr,
-  cheapestOf,
-  projectRunout,
-  makeFinding
-} = require('../helpers');
+const C = require('../config');
+const { round0, round1, inr, cheapestOf, projectRunout, makeFinding } = require('../helpers');
 
 function buildTransferOption({ stock, rate, runway, donors, unitValue }) {
   const stockAtArrival = Math.max(0, stock - rate * C.TRANSFER_DAYS);
@@ -15,13 +8,10 @@ function buildTransferOption({ stock, rate, runway, donors, unitValue }) {
   const donor = donors
     .map((d) => ({
       ...d,
-      surplus: Math.floor(
-        d.stock - d.rate * (C.TRANSFER_DAYS + C.DONOR_KEEP_DAYS)
-      )
+      surplus: Math.floor(d.stock - d.rate * (C.TRANSFER_DAYS + C.DONOR_KEEP_DAYS)),
     }))
     .filter((d) => d.surplus > 0)
     .sort((a, b) => b.surplus - a.surplus)[0];
-
   if (!donor) return null;
 
   const qty = Math.min(donor.surplus, need);
@@ -35,9 +25,7 @@ function buildTransferOption({ stock, rate, runway, donors, unitValue }) {
     type: 'transfer',
     label: `Transfer from ${donor.location}`,
     from: donor.location,
-    qty,
-    need,
-    cost,
+    qty, need, cost,
     arrives_in_days: C.TRANSFER_DAYS,
     arrives_in_time: inTime,
     lost_units: lost,
@@ -45,7 +33,7 @@ function buildTransferOption({ stock, rate, runway, donors, unitValue }) {
     covers_days: coversDays,
     donor_days_left: donor.rate > 0 ? (donor.stock - qty) / donor.rate : null,
     effective_cost: cost + lost * unitValue,
-    feasible: inTime && coversDays >= C.MIN_COVER_AFTER_FIX
+    feasible: inTime && coversDays >= C.MIN_COVER_AFTER_FIX,
   };
 }
 
@@ -66,8 +54,7 @@ function buildPoOption(s, { stock, rate, runway, unitValue }) {
     unit_price: s.price,
     moq: s.moq,
     lead_time_days: lead,
-    qty,
-    need,
+    qty, need,
     excess_units: qty - need,
     cost,
     arrives_in_days: lead,
@@ -75,7 +62,7 @@ function buildPoOption(s, { stock, rate, runway, unitValue }) {
     lost_units: lost,
     covers_days: (stockAtArrival + qty) / rate,
     effective_cost: cost + lost * unitValue,
-    feasible: inTime
+    feasible: inTime,
   };
 }
 
@@ -83,15 +70,12 @@ function rejectReason(o, chosen, runway) {
   if (!o.arrives_in_time) {
     return `Arrives in ${o.arrives_in_days}d but stock only lasts ~${round1(runway)}d (${round0(o.lost_units)} units lost)`;
   }
-
   if (o.type === 'transfer' && !o.feasible) {
     return `Would only give ${round1(o.covers_days)} days of cover`;
   }
-
   if (o.type === 'purchase_order' && o.excess_units > o.need) {
     return `MOQ ${o.moq} forces ${o.excess_units} extra units (${inr(o.cost)} outlay for ${o.need} needed)`;
   }
-
   return `${inr(o.effective_cost - chosen.effective_cost)} more expensive than the recommended option`;
 }
 
@@ -109,50 +93,26 @@ function publicOption(o, verdict) {
     covers_days: round1(o.covers_days),
     effective_cost: round0(o.effective_cost),
     feasible: o.feasible,
-    ...(o.unit_price !== undefined && {
-      unit_price: o.unit_price,
-      moq: o.moq
-    }),
-    verdict
+    ...(o.unit_price !== undefined && { unit_price: o.unit_price, moq: o.moq }),
+    verdict,
   };
 }
 
-function evaluateStockout({
-  sku,
-  location,
-  stock,
-  rate,
-  suppliers = [],
-  donors = [],
-  incoming = []
-}) {
+function evaluateStockout({ sku, location, stock, rate, suppliers = [], donors = [], incoming = [] }) {
   if (!(rate > 0)) return null;
 
   const daysOfStock = stock / rate;
   const runway = projectRunout(stock, rate, incoming);
   const cheapest = cheapestOf(suppliers);
-  const usualLead = cheapest
-    ? cheapest.lead_time_days
-    : C.DEFAULT_LEAD_DAYS;
+  const usualLead = cheapest ? cheapest.lead_time_days : C.DEFAULT_LEAD_DAYS;
 
   if (runway >= usualLead) return null;
 
   const unitValue = cheapest ? cheapest.price * C.LOST_SALE_MARKUP : 0;
   const options = [];
-
-  const transfer = buildTransferOption({
-    stock,
-    rate,
-    runway,
-    donors,
-    unitValue
-  });
-
+  const transfer = buildTransferOption({ stock, rate, runway, donors, unitValue });
   if (transfer) options.push(transfer);
-
-  suppliers.forEach((s) => {
-    options.push(buildPoOption(s, { stock, rate, runway, unitValue }));
-  });
+  suppliers.forEach((s) => options.push(buildPoOption(s, { stock, rate, runway, unitValue })));
 
   const baseEvidence = {
     location,
@@ -162,46 +122,26 @@ function evaluateStockout({
     runway_days: round1(runway),
     usual_supplier: cheapest ? cheapest.supplier : null,
     usual_lead_days: usualLead,
-    incoming_pos: incoming
+    incoming_pos: incoming,
   };
-
   const key = `stock:${sku}:${location}`;
 
   if (options.length === 0) {
-    const score = Math.min(100, 110 - Math.min(runway, 14) * 5);
-
+    const score = 110 - Math.min(runway, 14) * 5;
     return makeFinding({
-      kind: 'stockout_risk',
-      severity: 'high',
-      score,
-      type: 'alert',
-      sku,
-      key,
+      kind: 'stockout_risk', severity: 'high', score, type: 'alert', sku, key,
       details: { action: 'find_source', to: location },
-      evidence: {
-        ...baseEvidence,
-        options: [],
-        decision: {
-          chosen: null,
-          unavoidable_gap: true,
-          reason: 'No supplier or transfer source on file'
-        }
-      },
-      text: `${location} will run out of ${sku} in ~${round1(runway)} days and there is no supplier or transfer source on file. Someone needs to find one.`
+      evidence: { ...baseEvidence, options: [], decision: { chosen: null, unavoidable_gap: true, reason: 'No supplier or transfer source on file' } },
+      text: `${location} will run out of ${sku} in ~${round1(runway)} days and there is no supplier or transfer source on file. Someone needs to find one.`,
     });
   }
 
   const feasible = options.filter((o) => o.feasible);
   const pool = feasible.length ? feasible : options;
-  const chosen = pool.reduce((best, o) =>
-    o.effective_cost < best.effective_cost ? o : best
-  );
+  const chosen = pool.reduce((best, o) => (o.effective_cost < best.effective_cost ? o : best));
   const unavoidableGap = feasible.length === 0;
 
-  const cheapestOption = cheapest
-    ? options.find((o) => o.id === `po:${cheapest.supplier}`)
-    : null;
-
+  const cheapestOption = cheapest ? options.find((o) => o.id === `po:${cheapest.supplier}`) : null;
   const mismatch =
     chosen.type === 'purchase_order' &&
     cheapestOption &&
@@ -210,11 +150,9 @@ function evaluateStockout({
 
   const kind = mismatch ? 'supplier_mismatch' : 'stockout_risk';
   const severity = runway <= 3 || unavoidableGap ? 'high' : 'medium';
-  const score =
-    Math.min(100, 100 - Math.min(runway, 14) * 5 + (unavoidableGap ? 10 : 0));
+  const score = 100 - Math.min(runway, 14) * 5 + (unavoidableGap ? 10 : 0);
 
   let reason;
-
   if (unavoidableGap) {
     reason = `No option arrives before stock-out (~${round1(runway)}d). ${chosen.label} loses the least (~${round0(chosen.lost_units)} units).`;
   } else if (chosen.type === 'transfer') {
@@ -224,29 +162,17 @@ function evaluateStockout({
   } else {
     reason = `Arrives in ${chosen.arrives_in_days}d, before stock-out in ~${round1(runway)}d; ${chosen.qty} units for ${inr(chosen.cost)}.`;
   }
-
-  if (
-    chosen.type === 'purchase_order' &&
-    cheapest &&
-    chosen.supplier !== cheapest.supplier
-  ) {
+  if (chosen.type === 'purchase_order' && cheapest && chosen.supplier !== cheapest.supplier) {
     const pct = round1((chosen.unit_price / cheapest.price - 1) * 100);
     reason += ` Unit price is ${pct}% above the usual supplier (${cheapest.supplier}).`;
   }
-
   if (mismatch) {
     reason += ` ${cheapest.supplier} is cheapest per unit but its MOQ of ${cheapest.moq} would force ${inr(cheapestOption.cost)} of stock for a need of ${cheapestOption.need} units.`;
   }
 
   const details =
     chosen.type === 'transfer'
-      ? {
-          from: chosen.from,
-          to: location,
-          qty: chosen.qty,
-          est_cost: round0(chosen.cost),
-          arrives_in_days: chosen.arrives_in_days
-        }
+      ? { from: chosen.from, to: location, qty: chosen.qty, est_cost: round0(chosen.cost), arrives_in_days: chosen.arrives_in_days }
       : {
           supplier: chosen.supplier,
           qty: chosen.qty,
@@ -254,75 +180,18 @@ function evaluateStockout({
           est_cost: round0(chosen.cost),
           lead_time_days: chosen.lead_time_days,
           deliver_to: location,
-          price_premium_pct: cheapest
-            ? round1((chosen.unit_price / cheapest.price - 1) * 100)
-            : 0
+          price_premium_pct: cheapest ? round1((chosen.unit_price / cheapest.price - 1) * 100) : 0,
         };
 
   return makeFinding({
-    kind,
-    severity,
-    score,
-    type: chosen.type,
-    sku,
-    key,
-    details,
+    kind, severity, score, type: chosen.type, sku, key, details,
     evidence: {
       ...baseEvidence,
-      options: options.map((o) =>
-        publicOption(
-          o,
-          o === chosen ? 'Recommended' : rejectReason(o, chosen, runway)
-        )
-      ),
-      decision: {
-        chosen: chosen.label,
-        unavoidable_gap: unavoidableGap,
-        reason
-      }
+      options: options.map((o) => publicOption(o, o === chosen ? 'Recommended' : rejectReason(o, chosen, runway))),
+      decision: { chosen: chosen.label, unavoidable_gap: unavoidableGap, reason },
     },
-    text: `${location} has ${stock} units of ${sku} and sells ~${round1(rate)}/day, so it runs out in ~${round1(runway)} days. ${reason}`
+    text: `${location} has ${stock} units of ${sku} and sells ~${round1(rate)}/day, so it runs out in ~${round1(runway)} days. ${reason}`,
   });
 }
 
-function detectStockout(snapshot) {
-  const findings = [];
-
-  for (const m of snapshot.metrics) {
-    if (!snapshot.products[m.sku]) continue;
-
-    const rate = m.rate7 > 0 ? m.rate7 : m.rate28;
-    if (!(rate > 0)) continue;
-
-    const suppliers = snapshot.suppliersBySku[m.sku] || [];
-    const incoming = (snapshot.incomingBySku[m.sku] || []).filter(
-      (po) => po.daysUntil >= 0
-    );
-
-    const donors = snapshot.metrics
-      .filter((other) => other.sku === m.sku && other.location !== m.location)
-      .map((other) => ({
-        location: other.location,
-        stock: other.stock,
-        rate: other.rate7 > 0 ? other.rate7 : other.rate28
-      }));
-
-    const finding = evaluateStockout({
-      sku: m.sku,
-      location: m.location,
-      stock: m.stock,
-      rate,
-      suppliers,
-      donors,
-      incoming
-    });
-
-    if (finding) findings.push(finding);
-  }
-
-  return findings.sort((a, b) => b.score - a.score);
-}
-
-module.exports = { evaluateStockout, detectStockout };
-
-
+module.exports = { evaluateStockout };
