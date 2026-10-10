@@ -1,0 +1,44 @@
+po,supplier,sku,qty,expected_date,status
+PO-4401,Malnad Hydraulics,BLT-1032,16,2026-11-24,Confirmed
+PO-4402,Sri Venkateshwara Agro,HYD-1081,28,2026-10-28,Received
+PO-4403,Malnad Hydraulics,BLT-1003,56,2026-11-11,Received
+PO-4404,Kaveri Bearings Co,BLT-1012,40,2026-11-18,Open
+PO-4405,Western Ghats Industrial,CLT-1092,25,2026-11-12,Received
+PO-4406,Western Ghats Industrial,FLT-1001,54,2026-11-17,Open
+PO-4407,Bharat Filters Pvt Ltd,CLT-1074,28,2026-11-27,Open
+PO-4408,Bharat Filters Pvt Ltd,PMP-1091,26,2026-10-31,Received
+PO-4409,Kaveri Bearings Co,ELE-1073,25,2026-11-21,Open
+PO-4410,Malnad Hydraulics,BLT-1073,25,2026-11-27,Open
+PO-4411,Kaveri Bearings Co,SEL-1052,48,2026-11-19,Open
+PO-4412,Tungabhadra Motors,CLT-1053,48,2026-11-19,Open
+PO-4414,Tungabhadra Motors,ELE-1039,10,2026-11-02,Received
+PO-4415,Malnad Hydraulics,FLT-1098,25,2026-11-26,Open
+PO-4416,Deccan Auto Parts,ELE-1079,59,2026-11-26,Open
+PO-4418,Kaveri Bearings Co,BLT-1093,25,2026-11-04,Received
+PO-4419,Sri Venkateshwara Agro,SEL-1029,25,2026-11-24,Open
+PO-4420,Western Ghats Industrial,HYD-1042,47,2026-11-20,Confirmed
+PO-4421,Bharat Filters Pvt Ltd,HYD-1095,20,2026-11-25,Open
+PO-4422,Deccan Auto Parts,PMP-1089,25,2026-11-24,Confirmed
+PO-4423,Malnad Hydraulics,BRG-1058,28,2026-11-23,Open
+PO-4424,Tungabhadra Motors,ELE-1092,30,2026-11-01,Received
+PO-4425,Bharat Filters Pvt Ltd,FLT-1045,23,2026-11-02,Received
+PO-4426,Kaveri Bearings Co,ELE-1051,26,2026-11-19,Open
+PO-4427,Bharat Filters Pvt Ltd,CLT-1044,56,2026-11-24,Confirmed
+PO-4428,Krishna Tractor Spares,CLT-1021,58,2026-11-21,Open
+PO-4429,Tungabhadra Motors,BLT-1035,25,2026-11-17,Open
+PO-4430,Kaveri Bearings Co,BRG-1025,50,2026-11-27,Open
+PO-4431,Bharat Filters Pvt Ltd,HYD-1028,39,2026-11-23,Confirmed
+PO-4432,Krishna Tractor Spares,SEL-1077,40,2026-11-12,Received
+PO-4433,Tungabhadra Motors,CLT-1057,37,2026-10-28,Received
+PO-4434,Malnad Hydraulics,ELE-1086,53,2026-10-31,Received
+PO-4435,Deccan Auto Parts,PMP-1056,28,2026-11-19,Open
+PO-4436,Malnad Hydraulics,ELE-1057,53,2026-11-22,Confirmed
+PO-4437,Malnad Hydraulics,BLT-1066,25,2026-11-24,Open
+PO-4439,Deccan Auto Parts,PMP-1098,41,2026-11-19,Open
+PO-4440,Malnad Hydraulics,FLT-1016,46,2026-11-20,Open
+PO-4441,Krishna Tractor Spares,HYD-1004,23,2026-11-17,Confirmed
+PO-4442,Malnad Hydraulics,HYD-1038,52,2026-11-17,Open
+PO-4443,Deccan Auto Parts,PMP-1079,44,2026-11-21,Open
+PO-4444,Western Ghats Industrial,BRG-1081,41,2026-11-06,Received
+PO-4471,Tungabhadra Motors,SEL-3310,60,2026-11-10,Open
+PO-4488,Sri Venkateshwara Agro,PMP-5012,30,2026-11-17,Confirmed

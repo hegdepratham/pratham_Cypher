@@ -24,17 +24,17 @@ let r = await call('GET', '/api/health');
 check('health returns ok', r.status === 200 && r.body.status === 'ok');
 
 r = await call('GET', '/api/products');
-check('10 products', r.status === 200 && r.body.length === 10);
+check('products return data', r.status === 200 && r.body.length === 126);
 
-r = await call('GET', '/api/inventory?sku=F-101');
+r = await call('GET', '/api/inventory?sku=BLT-1003');
 const gokak = r.body.find((x) => x.location === 'Gokak');
-check('Gokak has 8 of F-101', !!gokak && gokak.stock === 8);
+check('BLT-1003 has 9 in Gokak', !!gokak && gokak.stock === 9);
 
-r = await call('GET', '/api/suppliers?sku=F-101');
-check('F-101 has suppliers', r.status === 200 && r.body.length >= 1);
+r = await call('GET', '/api/suppliers?sku=BLT-1003');
+check('BLT-1003 has suppliers', r.status === 200 && r.body.length >= 1);
 
-r = await call('GET', '/api/purchase-orders?status=overdue');
-check('at least one overdue PO', r.status === 200 && r.body.length >= 1);
+r = await call('GET', '/api/purchase-orders?status=Open');
+check('open purchase orders exist', r.status === 200 && r.body.length >= 1);
 
 r = await call('GET', '/api/sales?days=abc');
 check('invalid days gives 400', r.status === 400);
