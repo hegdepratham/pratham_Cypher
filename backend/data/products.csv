@@ -1,0 +1,127 @@
+sku,product_name,machine_model,category
+BLT-1003,Fan Belt,JCB 3DX,Belts
+BLT-1012,Alternator Belt,Mahindra 575 DI,Belts
+BLT-1016,Alternator Belt,Escorts Farmtrac 60,Belts
+BLT-1026,Alternator Belt,JCB 3DX,Belts
+BLT-1032,V-Belt,JCB 3DX,Belts
+BLT-1035,V-Belt,Swaraj 744 FE,Belts
+BLT-1047,V-Belt,Escorts Farmtrac 60,Belts
+BLT-1053,Fan Belt,JCB 3DX,Belts
+BLT-1061,Alternator Belt,Sonalika DI 750,Belts
+BLT-1066,Alternator Belt,Kubota MU4501,Belts
+BLT-1073,Alternator Belt,Mahindra 575 DI,Belts
+BLT-1080,V-Belt,Sonalika DI 750,Belts
+BLT-1087,Fan Belt,Mahindra 575 DI,Belts
+BLT-1093,V-Belt,JCB 3DX,Belts
+BLT-1098,Fan Belt,Sonalika DI 750,Belts
+BLT-4105,Fan Belt,Swaraj 744 FE,Belts
+BRG-1000,Wheel Bearing,JCB 3DX,Bearings
+BRG-1008,Axle Bearing,Escorts Farmtrac 60,Bearings
+BRG-1018,Clutch Release Bearing,TAFE 45 DI,Bearings
+BRG-1025,Clutch Release Bearing,Sonalika DI 750,Bearings
+BRG-1033,Clutch Release Bearing,Kubota MU4501,Bearings
+BRG-1037,Wheel Bearing,Kubota MU4501,Bearings
+BRG-1045,Clutch Release Bearing,Escorts Farmtrac 60,Bearings
+BRG-1049,Axle Bearing,Swaraj 744 FE,Bearings
+BRG-1058,Axle Bearing,Sonalika DI 750,Bearings
+BRG-1064,Clutch Release Bearing,Kubota MU4501,Bearings
+BRG-1075,Wheel Bearing,TAFE 45 DI,Bearings
+BRG-1081,Clutch Release Bearing,Swaraj 744 FE,Bearings
+BRG-1086,Wheel Bearing,Mahindra 575 DI,Bearings
+BRG-1092,Clutch Release Bearing,TAFE 45 DI,Bearings
+BRG-1099,Wheel Bearing,Mahindra 575 DI,Bearings
+BRG-2207,Axle Bearing,Escorts Farmtrac 60,Bearings
+CLT-1004,Clutch Plate,John Deere 5050D,Clutch Parts
+CLT-1007,Clutch Plate,John Deere 5050D,Clutch Parts
+CLT-1016,Pressure Plate,Mahindra 575 DI,Clutch Parts
+CLT-1021,Pressure Plate,John Deere 5050D,Clutch Parts
+CLT-1028,Pressure Plate,Swaraj 744 FE,Clutch Parts
+CLT-1037,Pressure Plate,Swaraj 744 FE,Clutch Parts
+CLT-1044,Pressure Plate,JCB 3DX,Clutch Parts
+CLT-1053,Pressure Plate,John Deere 5050D,Clutch Parts
+CLT-1057,Pressure Plate,JCB 3DX,Clutch Parts
+CLT-1068,Clutch Plate,Mahindra 575 DI,Clutch Parts
+CLT-1074,Clutch Plate,Mahindra 575 DI,Clutch Parts
+CLT-1081,Clutch Plate,Escorts Farmtrac 60,Clutch Parts
+CLT-1089,Pressure Plate,TAFE 45 DI,Clutch Parts
+CLT-1092,Clutch Plate,Kubota MU4501,Clutch Parts
+CLT-1099,Pressure Plate,Mahindra 575 DI,Clutch Parts
+CLT-6120,Pressure Plate,Kubota MU4501,Clutch Parts
+ELE-1000,Alternator,JCB 3DX,Electricals
+ELE-1010,Glow Plug,Swaraj 744 FE,Electricals
+ELE-1018,Alternator,Swaraj 744 FE,Electricals
+ELE-1023,Starter Motor,Swaraj 744 FE,Electricals
+ELE-1030,Alternator,JCB 3DX,Electricals
+ELE-1039,Glow Plug,Swaraj 744 FE,Electricals
+ELE-1044,Starter Motor,Swaraj 744 FE,Electricals
+ELE-1051,Alternator,JCB 3DX,Electricals
+ELE-1057,Starter Motor,TAFE 45 DI,Electricals
+ELE-1067,Glow Plug,JCB 3DX,Electricals
+ELE-1073,Starter Motor,Swaraj 744 FE,Electricals
+ELE-1079,Glow Plug,Escorts Farmtrac 60,Electricals
+ELE-1086,Glow Plug,Mahindra 575 DI,Electricals
+ELE-1092,Starter Motor,John Deere 5050D,Electricals
+ELE-1100,Starter Motor,Kubota MU4501,Electricals
+FLT-1001,Hydraulic Filter,TAFE 45 DI,Filters
+FLT-1009,Oil Filter,Kubota MU4501,Filters
+FLT-1016,Air Filter,John Deere 5050D,Filters
+FLT-1021,Hydraulic Filter,JCB 3DX,Filters
+FLT-1022,Fuel Filter,Escorts Farmtrac 60,Filters
+FLT-1032,Hydraulic Filter,Swaraj 744 FE,Filters
+FLT-1037,Oil Filter,Escorts Farmtrac 60,Filters
+FLT-1045,Oil Filter,Kubota MU4501,Filters
+FLT-1053,Fuel Filter,TAFE 45 DI,Filters
+FLT-1056,Fuel Filter,John Deere 5050D,Filters
+FLT-1063,Hydraulic Filter,Escorts Farmtrac 60,Filters
+FLT-1074,Air Filter,Escorts Farmtrac 60,Filters
+FLT-1079,Fuel Filter,JCB 3DX,Filters
+FLT-1086,Air Filter,Sonalika DI 750,Filters
+FLT-1093,Air Filter,John Deere 5050D,Filters
+FLT-1098,Fuel Filter,JCB 3DX,Filters
+HYD-1004,Return Hose,Mahindra 575 DI,Hydraulic Hoses
+HYD-1012,High-Pressure Hose,Escorts Farmtrac 60,Hydraulic Hoses
+HYD-1016,High-Pressure Hose,Mahindra 575 DI,Hydraulic Hoses
+HYD-1024,High-Pressure Hose,JCB 3DX,Hydraulic Hoses
+HYD-1028,Return Hose,Mahindra 575 DI,Hydraulic Hoses
+HYD-1038,Return Hose,JCB 3DX,Hydraulic Hoses
+HYD-1042,High-Pressure Hose,JCB 3DX,Hydraulic Hoses
+HYD-1051,High-Pressure Hose,TAFE 45 DI,Hydraulic Hoses
+HYD-1061,Return Hose,Kubota MU4501,Hydraulic Hoses
+HYD-1063,Return Hose,Escorts Farmtrac 60,Hydraulic Hoses
+HYD-1074,Return Hose,Swaraj 744 FE,Hydraulic Hoses
+HYD-1081,Return Hose,Swaraj 744 FE,Hydraulic Hoses
+HYD-1089,High-Pressure Hose,JCB 3DX,Hydraulic Hoses
+HYD-1095,High-Pressure Hose,Escorts Farmtrac 60,Hydraulic Hoses
+HYD-1098,High-Pressure Hose,Kubota MU4501,Hydraulic Hoses
+PMP-1002,Hydraulic Pump,Mahindra 575 DI,Pumps
+PMP-1009,Hydraulic Pump,Mahindra 575 DI,Pumps
+PMP-1019,Fuel Injection Pump,John Deere 5050D,Pumps
+PMP-1023,Fuel Injection Pump,Sonalika DI 750,Pumps
+PMP-1032,Water Pump,TAFE 45 DI,Pumps
+PMP-1036,Hydraulic Pump,Escorts Farmtrac 60,Pumps
+PMP-1043,Fuel Injection Pump,Kubota MU4501,Pumps
+PMP-1052,Fuel Injection Pump,Kubota MU4501,Pumps
+PMP-1056,Fuel Injection Pump,Mahindra 575 DI,Pumps
+PMP-1063,Fuel Injection Pump,John Deere 5050D,Pumps
+PMP-1075,Fuel Injection Pump,Kubota MU4501,Pumps
+PMP-1079,Water Pump,Mahindra 575 DI,Pumps
+PMP-1089,Fuel Injection Pump,Swaraj 744 FE,Pumps
+PMP-1091,Water Pump,Escorts Farmtrac 60,Pumps
+PMP-1098,Fuel Injection Pump,JCB 3DX,Pumps
+PMP-5012,Water Pump,Sonalika DI 750,Pumps
+SEL-1002,Oil Seal Kit,JCB 3DX,Seals & Gaskets
+SEL-1008,Oil Seal Kit,TAFE 45 DI,Seals & Gaskets
+SEL-1014,Oil Seal Kit,Sonalika DI 750,Seals & Gaskets
+SEL-1024,O-Ring Set,John Deere 5050D,Seals & Gaskets
+SEL-1029,O-Ring Set,TAFE 45 DI,Seals & Gaskets
+SEL-1037,Head Gasket,Kubota MU4501,Seals & Gaskets
+SEL-1042,Oil Seal Kit,Mahindra 575 DI,Seals & Gaskets
+SEL-1052,Head Gasket,Escorts Farmtrac 60,Seals & Gaskets
+SEL-1059,Oil Seal Kit,Escorts Farmtrac 60,Seals & Gaskets
+SEL-1068,Oil Seal Kit,Swaraj 744 FE,Seals & Gaskets
+SEL-1070,O-Ring Set,Mahindra 575 DI,Seals & Gaskets
+SEL-1077,Oil Seal Kit,Mahindra 575 DI,Seals & Gaskets
+SEL-1085,Oil Seal Kit,Escorts Farmtrac 60,Seals & Gaskets
+SEL-1096,Oil Seal Kit,Kubota MU4501,Seals & Gaskets
+SEL-1098,Head Gasket,Escorts Farmtrac 60,Seals & Gaskets
+SEL-3310,Oil Seal Kit,Mahindra 575 DI,Seals & Gaskets

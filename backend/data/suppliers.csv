@@ -1,0 +1,206 @@
+supplier,sku,price,lead_time_days,moq
+Malnad Hydraulics,BLT-1003,780.0,4,25
+Deccan Auto Parts,BLT-1012,2598.0,5,20
+Kaveri Bearings Co,BLT-1012,2355.0,7,5
+Bharat Filters Pvt Ltd,BLT-1016,1998.0,3,20
+Malnad Hydraulics,BLT-1026,1212.0,5,10
+Tungabhadra Motors,BLT-1026,1225.0,7,25
+Malnad Hydraulics,BLT-1032,1646.0,10,10
+Krishna Tractor Spares,BLT-1035,1742.0,7,5
+Tungabhadra Motors,BLT-1035,1684.0,10,25
+Bharat Filters Pvt Ltd,BLT-1047,2107.0,7,5
+Deccan Auto Parts,BLT-1047,2332.0,5,20
+Bharat Filters Pvt Ltd,BLT-1053,1443.0,4,5
+Krishna Tractor Spares,BLT-1053,1352.0,5,5
+Sri Venkateshwara Agro,BLT-1061,1452.0,4,20
+Kaveri Bearings Co,BLT-1066,1520.0,3,5
+Malnad Hydraulics,BLT-1066,1443.0,3,20
+Deccan Auto Parts,BLT-1073,858.0,10,20
+Malnad Hydraulics,BLT-1073,780.0,3,25
+Sri Venkateshwara Agro,BLT-1080,1049.0,3,25
+Tungabhadra Motors,BLT-1080,1193.0,7,5
+Krishna Tractor Spares,BLT-1087,2532.0,3,5
+Kaveri Bearings Co,BLT-1093,2501.0,7,5
+Sri Venkateshwara Agro,BLT-1093,2862.0,3,5
+Bharat Filters Pvt Ltd,BLT-1098,1009.0,5,5
+Krishna Tractor Spares,BLT-1098,1051.0,3,10
+Deccan Auto Parts,BLT-4105,455.0,3,10
+Krishna Tractor Spares,BLT-4105,420.0,5,25
+Deccan Auto Parts,BRG-1000,2623.0,7,5
+Sri Venkateshwara Agro,BRG-1000,2319.0,4,10
+Krishna Tractor Spares,BRG-1008,4322.0,7,20
+Western Ghats Industrial,BRG-1018,2352.0,10,20
+Kaveri Bearings Co,BRG-1025,404.0,10,25
+Malnad Hydraulics,BRG-1025,405.0,7,10
+Deccan Auto Parts,BRG-1033,4258.0,7,20
+Sri Venkateshwara Agro,BRG-1033,4599.0,5,20
+Bharat Filters Pvt Ltd,BRG-1037,1507.0,4,20
+Kaveri Bearings Co,BRG-1037,1633.0,7,25
+Deccan Auto Parts,BRG-1045,2034.0,5,20
+Tungabhadra Motors,BRG-1045,2147.0,10,20
+Tungabhadra Motors,BRG-1049,3113.0,10,10
+Western Ghats Industrial,BRG-1049,3146.0,10,5
+Bharat Filters Pvt Ltd,BRG-1058,3973.0,3,20
+Malnad Hydraulics,BRG-1058,3687.0,7,10
+Sri Venkateshwara Agro,BRG-1064,2350.0,10,10
+Tungabhadra Motors,BRG-1064,2477.0,10,20
+Deccan Auto Parts,BRG-1075,1484.0,3,20
+Western Ghats Industrial,BRG-1081,4350.0,4,5
+Krishna Tractor Spares,BRG-1086,4417.0,7,20
+Tungabhadra Motors,BRG-1086,4869.0,3,25
+Malnad Hydraulics,BRG-1092,1479.0,3,5
+Bharat Filters Pvt Ltd,BRG-1099,3238.0,10,10
+Krishna Tractor Spares,BRG-1099,2803.0,10,10
+Deccan Auto Parts,BRG-2207,4139.0,5,10
+Kaveri Bearings Co,BRG-2207,3871.0,4,10
+Kaveri Bearings Co,CLT-1004,547.0,4,5
+Krishna Tractor Spares,CLT-1004,588.0,7,5
+Deccan Auto Parts,CLT-1007,3235.0,5,25
+Kaveri Bearings Co,CLT-1007,2859.0,5,20
+Bharat Filters Pvt Ltd,CLT-1016,2620.0,3,10
+Kaveri Bearings Co,CLT-1016,3004.0,4,5
+Krishna Tractor Spares,CLT-1021,1763.0,7,20
+Krishna Tractor Spares,CLT-1028,186.0,10,10
+Western Ghats Industrial,CLT-1028,209.0,4,25
+Bharat Filters Pvt Ltd,CLT-1037,233.0,4,20
+Tungabhadra Motors,CLT-1037,220.0,3,10
+Bharat Filters Pvt Ltd,CLT-1044,4137.0,4,10
+Sri Venkateshwara Agro,CLT-1044,4534.0,3,20
+Krishna Tractor Spares,CLT-1053,3711.0,10,20
+Tungabhadra Motors,CLT-1053,3547.0,10,10
+Tungabhadra Motors,CLT-1057,403.0,5,20
+Tungabhadra Motors,CLT-1068,2140.0,5,25
+Bharat Filters Pvt Ltd,CLT-1074,2535.0,7,25
+Kaveri Bearings Co,CLT-1081,827.0,3,5
+Malnad Hydraulics,CLT-1081,860.0,5,5
+Kaveri Bearings Co,CLT-1089,623.0,3,20
+Western Ghats Industrial,CLT-1089,548.0,4,20
+Western Ghats Industrial,CLT-1092,4506.0,5,25
+Deccan Auto Parts,CLT-1099,1261.0,3,20
+Kaveri Bearings Co,CLT-1099,1420.0,10,25
+Kaveri Bearings Co,CLT-6120,3400.0,21,200
+Sri Venkateshwara Agro,ELE-1000,1626.0,10,10
+Kaveri Bearings Co,ELE-1010,607.0,4,20
+Tungabhadra Motors,ELE-1010,558.0,4,20
+Bharat Filters Pvt Ltd,ELE-1018,4107.0,4,20
+Deccan Auto Parts,ELE-1023,2620.0,7,5
+Bharat Filters Pvt Ltd,ELE-1030,4740.0,10,20
+Kaveri Bearings Co,ELE-1030,4387.0,4,5
+Tungabhadra Motors,ELE-1039,2607.0,10,5
+Sri Venkateshwara Agro,ELE-1044,1898.0,5,10
+Kaveri Bearings Co,ELE-1051,2698.0,7,20
+Krishna Tractor Spares,ELE-1051,2746.0,7,20
+Malnad Hydraulics,ELE-1057,1860.0,4,25
+Krishna Tractor Spares,ELE-1067,303.0,5,5
+Kaveri Bearings Co,ELE-1073,252.0,4,25
+Deccan Auto Parts,ELE-1079,4172.0,7,5
+Krishna Tractor Spares,ELE-1079,4242.0,4,25
+Malnad Hydraulics,ELE-1086,1419.0,5,10
+Krishna Tractor Spares,ELE-1092,2375.0,4,20
+Tungabhadra Motors,ELE-1092,2113.0,7,20
+Tungabhadra Motors,ELE-1100,2053.0,10,20
+Kaveri Bearings Co,FLT-1001,884.0,4,10
+Western Ghats Industrial,FLT-1001,784.0,4,5
+Kaveri Bearings Co,FLT-1009,2054.0,10,5
+Sri Venkateshwara Agro,FLT-1009,1877.0,4,10
+Krishna Tractor Spares,FLT-1016,4567.0,4,25
+Malnad Hydraulics,FLT-1016,3888.0,7,25
+Bharat Filters Pvt Ltd,FLT-1021,1850.0,7,20
+Malnad Hydraulics,FLT-1021,2180.0,3,10
+Malnad Hydraulics,FLT-1022,3243.0,5,20
+Sri Venkateshwara Agro,FLT-1022,2993.0,4,10
+Sri Venkateshwara Agro,FLT-1032,1249.0,4,10
+Tungabhadra Motors,FLT-1037,1724.0,7,10
+Bharat Filters Pvt Ltd,FLT-1045,4450.0,10,5
+Kaveri Bearings Co,FLT-1045,4598.0,3,5
+Krishna Tractor Spares,FLT-1053,4341.0,3,10
+Tungabhadra Motors,FLT-1053,4012.0,5,20
+Deccan Auto Parts,FLT-1056,488.0,5,5
+Western Ghats Industrial,FLT-1056,449.0,10,20
+Krishna Tractor Spares,FLT-1063,3159.0,5,20
+Sri Venkateshwara Agro,FLT-1074,3803.0,5,20
+Tungabhadra Motors,FLT-1074,3838.0,4,5
+Krishna Tractor Spares,FLT-1079,687.0,10,5
+Bharat Filters Pvt Ltd,FLT-1086,891.0,10,10
+Deccan Auto Parts,FLT-1086,907.0,3,10
+Kaveri Bearings Co,FLT-1093,4420.0,5,10
+Malnad Hydraulics,FLT-1098,3985.0,7,25
+Krishna Tractor Spares,HYD-1004,1295.0,3,20
+Sri Venkateshwara Agro,HYD-1004,1352.0,7,20
+Deccan Auto Parts,HYD-1012,338.0,4,10
+Western Ghats Industrial,HYD-1012,321.0,7,20
+Deccan Auto Parts,HYD-1016,590.0,7,5
+Krishna Tractor Spares,HYD-1024,4272.0,3,20
+Tungabhadra Motors,HYD-1024,3999.0,7,20
+Bharat Filters Pvt Ltd,HYD-1028,191.0,7,5
+Krishna Tractor Spares,HYD-1028,208.0,4,10
+Kaveri Bearings Co,HYD-1038,420.0,7,10
+Malnad Hydraulics,HYD-1038,382.0,7,5
+Western Ghats Industrial,HYD-1042,2914.0,4,25
+Malnad Hydraulics,HYD-1051,2828.0,10,20
+Tungabhadra Motors,HYD-1061,1263.0,5,20
+Western Ghats Industrial,HYD-1061,1084.0,4,10
+Krishna Tractor Spares,HYD-1063,2904.0,7,25
+Tungabhadra Motors,HYD-1063,3095.0,5,10
+Deccan Auto Parts,HYD-1074,2188.0,3,25
+Kaveri Bearings Co,HYD-1081,3721.0,5,20
+Sri Venkateshwara Agro,HYD-1081,3410.0,10,5
+Tungabhadra Motors,HYD-1089,3729.0,7,20
+Bharat Filters Pvt Ltd,HYD-1095,2079.0,5,10
+Kaveri Bearings Co,HYD-1095,2161.0,5,25
+Deccan Auto Parts,HYD-1098,1990.0,7,10
+Tungabhadra Motors,HYD-1098,2111.0,4,5
+Deccan Auto Parts,PMP-1002,1772.0,5,25
+Sri Venkateshwara Agro,PMP-1002,1955.0,5,10
+Kaveri Bearings Co,PMP-1009,3986.0,5,5
+Krishna Tractor Spares,PMP-1009,3727.0,3,5
+Bharat Filters Pvt Ltd,PMP-1019,990.0,5,25
+Tungabhadra Motors,PMP-1023,1444.0,10,10
+Bharat Filters Pvt Ltd,PMP-1032,1677.0,3,20
+Kaveri Bearings Co,PMP-1032,1492.0,3,10
+Bharat Filters Pvt Ltd,PMP-1036,1103.0,5,25
+Deccan Auto Parts,PMP-1036,1230.0,10,10
+Sri Venkateshwara Agro,PMP-1043,797.0,10,25
+Western Ghats Industrial,PMP-1043,871.0,4,5
+Sri Venkateshwara Agro,PMP-1052,1753.0,7,20
+Tungabhadra Motors,PMP-1052,1813.0,4,10
+Deccan Auto Parts,PMP-1056,1786.0,5,25
+Krishna Tractor Spares,PMP-1056,1924.0,4,20
+Deccan Auto Parts,PMP-1063,1417.0,5,25
+Kaveri Bearings Co,PMP-1075,717.0,7,5
+Malnad Hydraulics,PMP-1075,762.0,10,10
+Deccan Auto Parts,PMP-1079,3506.0,5,20
+Malnad Hydraulics,PMP-1079,3704.0,4,20
+Deccan Auto Parts,PMP-1089,1339.0,7,25
+Bharat Filters Pvt Ltd,PMP-1091,3461.0,5,5
+Deccan Auto Parts,PMP-1098,1995.0,7,5
+Deccan Auto Parts,PMP-5012,1979.0,3,5
+Sri Venkateshwara Agro,PMP-5012,1767.0,4,20
+Kaveri Bearings Co,SEL-1002,1365.0,7,25
+Western Ghats Industrial,SEL-1002,1228.0,7,25
+Malnad Hydraulics,SEL-1008,3514.0,3,20
+Sri Venkateshwara Agro,SEL-1008,3023.0,10,25
+Tungabhadra Motors,SEL-1014,381.0,7,10
+Kaveri Bearings Co,SEL-1024,513.0,10,10
+Tungabhadra Motors,SEL-1024,585.0,3,10
+Krishna Tractor Spares,SEL-1029,505.0,5,20
+Sri Venkateshwara Agro,SEL-1029,483.0,3,25
+Deccan Auto Parts,SEL-1037,2782.0,5,5
+Malnad Hydraulics,SEL-1042,4752.0,4,10
+Sri Venkateshwara Agro,SEL-1042,4378.0,7,5
+Kaveri Bearings Co,SEL-1052,3143.0,10,5
+Deccan Auto Parts,SEL-1059,287.0,7,10
+Malnad Hydraulics,SEL-1059,307.0,7,5
+Kaveri Bearings Co,SEL-1068,3650.0,3,20
+Malnad Hydraulics,SEL-1068,3805.0,4,5
+Sri Venkateshwara Agro,SEL-1070,2895.0,7,25
+Krishna Tractor Spares,SEL-1077,806.0,7,25
+Malnad Hydraulics,SEL-1077,822.0,7,25
+Malnad Hydraulics,SEL-1085,1931.0,4,20
+Western Ghats Industrial,SEL-1085,2050.0,10,20
+Deccan Auto Parts,SEL-1096,2911.0,5,10
+Western Ghats Industrial,SEL-1096,2864.0,7,25
+Bharat Filters Pvt Ltd,SEL-1098,3217.0,4,20
+Tungabhadra Motors,SEL-1098,2877.0,3,25
+Tungabhadra Motors,SEL-3310,1627.0,3,10
+Western Ghats Industrial,SEL-3310,1790.0,4,10

@@ -1,0 +1,1009 @@
+sku,location,stock
+BLT-1003,Gokak,9
+BLT-1003,Belgaum,1
+BLT-1003,Hubli,33
+BLT-1003,Dharwad,41
+BLT-1003,Bijapur,4
+BLT-1003,Bagalkot,1
+BLT-1003,Belgaum WH,30
+BLT-1003,Hubli WH,12
+BLT-1012,Gokak,26
+BLT-1012,Belgaum,2
+BLT-1012,Hubli,0
+BLT-1012,Dharwad,2
+BLT-1012,Bijapur,12
+BLT-1012,Bagalkot,8
+BLT-1012,Belgaum WH,10
+BLT-1012,Hubli WH,26
+BLT-1016,Gokak,4
+BLT-1016,Belgaum,31
+BLT-1016,Hubli,21
+BLT-1016,Dharwad,0
+BLT-1016,Bijapur,0
+BLT-1016,Bagalkot,41
+BLT-1016,Belgaum WH,47
+BLT-1016,Hubli WH,25
+BLT-1026,Gokak,21
+BLT-1026,Belgaum,2
+BLT-1026,Hubli,2
+BLT-1026,Dharwad,3
+BLT-1026,Bijapur,33
+BLT-1026,Bagalkot,4
+BLT-1026,Belgaum WH,50
+BLT-1026,Hubli WH,77
+BLT-1032,Gokak,10
+BLT-1032,Belgaum,24
+BLT-1032,Hubli,5
+BLT-1032,Dharwad,10
+BLT-1032,Bijapur,28
+BLT-1032,Bagalkot,12
+BLT-1032,Belgaum WH,67
+BLT-1032,Hubli WH,77
+BLT-1035,Gokak,10
+BLT-1035,Belgaum,7
+BLT-1035,Hubli,7
+BLT-1035,Dharwad,30
+BLT-1035,Bijapur,15
+BLT-1035,Bagalkot,41
+BLT-1035,Belgaum WH,68
+BLT-1035,Hubli WH,12
+BLT-1047,Gokak,3
+BLT-1047,Belgaum,0
+BLT-1047,Hubli,2
+BLT-1047,Dharwad,9
+BLT-1047,Bijapur,12
+BLT-1047,Bagalkot,5
+BLT-1047,Belgaum WH,24
+BLT-1047,Hubli WH,30
+BLT-1053,Gokak,45
+BLT-1053,Belgaum,2
+BLT-1053,Hubli,14
+BLT-1053,Dharwad,28
+BLT-1053,Bijapur,15
+BLT-1053,Bagalkot,18
+BLT-1053,Belgaum WH,46
+BLT-1053,Hubli WH,54
+BLT-1061,Gokak,3
+BLT-1061,Belgaum,3
+BLT-1061,Hubli,5
+BLT-1061,Dharwad,3
+BLT-1061,Bijapur,15
+BLT-1061,Bagalkot,42
+BLT-1061,Belgaum WH,13
+BLT-1061,Hubli WH,21
+BLT-1066,Gokak,17
+BLT-1066,Belgaum,5
+BLT-1066,Hubli,0
+BLT-1066,Dharwad,5
+BLT-1066,Bijapur,7
+BLT-1066,Bagalkot,37
+BLT-1066,Belgaum WH,79
+BLT-1066,Hubli WH,50
+BLT-1073,Gokak,0
+BLT-1073,Belgaum,59
+BLT-1073,Hubli,2
+BLT-1073,Dharwad,13
+BLT-1073,Bijapur,2
+BLT-1073,Bagalkot,10
+BLT-1073,Belgaum WH,76
+BLT-1073,Hubli WH,74
+BLT-1080,Gokak,1
+BLT-1080,Belgaum,20
+BLT-1080,Hubli,26
+BLT-1080,Dharwad,30
+BLT-1080,Bijapur,16
+BLT-1080,Bagalkot,13
+BLT-1080,Belgaum WH,25
+BLT-1080,Hubli WH,23
+BLT-1087,Gokak,97
+BLT-1087,Belgaum,19
+BLT-1087,Hubli,2
+BLT-1087,Dharwad,12
+BLT-1087,Bijapur,3
+BLT-1087,Bagalkot,25
+BLT-1087,Belgaum WH,63
+BLT-1087,Hubli WH,53
+BLT-1093,Gokak,19
+BLT-1093,Belgaum,3
+BLT-1093,Hubli,7
+BLT-1093,Dharwad,7
+BLT-1093,Bijapur,16
+BLT-1093,Bagalkot,54
+BLT-1093,Belgaum WH,21
+BLT-1093,Hubli WH,32
+BLT-1098,Gokak,22
+BLT-1098,Belgaum,1
+BLT-1098,Hubli,1
+BLT-1098,Dharwad,5
+BLT-1098,Bijapur,10
+BLT-1098,Bagalkot,4
+BLT-1098,Belgaum WH,53
+BLT-1098,Hubli WH,42
+BLT-4105,Gokak,22
+BLT-4105,Belgaum,9
+BLT-4105,Hubli,34
+BLT-4105,Dharwad,13
+BLT-4105,Bijapur,28
+BLT-4105,Bagalkot,9
+BLT-4105,Belgaum WH,58
+BLT-4105,Hubli WH,30
+BRG-1000,Gokak,4
+BRG-1000,Belgaum,5
+BRG-1000,Hubli,10
+BRG-1000,Dharwad,16
+BRG-1000,Bijapur,10
+BRG-1000,Bagalkot,17
+BRG-1000,Belgaum WH,54
+BRG-1000,Hubli WH,48
+BRG-1008,Gokak,9
+BRG-1008,Belgaum,0
+BRG-1008,Hubli,0
+BRG-1008,Dharwad,34
+BRG-1008,Bijapur,9
+BRG-1008,Bagalkot,13
+BRG-1008,Belgaum WH,77
+BRG-1008,Hubli WH,54
+BRG-1018,Gokak,2
+BRG-1018,Belgaum,34
+BRG-1018,Hubli,0
+BRG-1018,Dharwad,10
+BRG-1018,Bijapur,3
+BRG-1018,Bagalkot,18
+BRG-1018,Belgaum WH,74
+BRG-1018,Hubli WH,31
+BRG-1025,Gokak,3
+BRG-1025,Belgaum,2
+BRG-1025,Hubli,19
+BRG-1025,Dharwad,51
+BRG-1025,Bijapur,2
+BRG-1025,Bagalkot,7
+BRG-1025,Belgaum WH,35
+BRG-1025,Hubli WH,58
+BRG-1033,Gokak,5
+BRG-1033,Belgaum,2
+BRG-1033,Hubli,12
+BRG-1033,Dharwad,3
+BRG-1033,Bijapur,7
+BRG-1033,Bagalkot,34
+BRG-1033,Belgaum WH,53
+BRG-1033,Hubli WH,75
+BRG-1037,Gokak,10
+BRG-1037,Belgaum,33
+BRG-1037,Hubli,20
+BRG-1037,Dharwad,2
+BRG-1037,Bijapur,12
+BRG-1037,Bagalkot,6
+BRG-1037,Belgaum WH,46
+BRG-1037,Hubli WH,32
+BRG-1045,Gokak,3
+BRG-1045,Belgaum,0
+BRG-1045,Hubli,19
+BRG-1045,Dharwad,2
+BRG-1045,Bijapur,5
+BRG-1045,Bagalkot,4
+BRG-1045,Belgaum WH,21
+BRG-1045,Hubli WH,75
+BRG-1049,Gokak,13
+BRG-1049,Belgaum,2
+BRG-1049,Hubli,16
+BRG-1049,Dharwad,0
+BRG-1049,Bijapur,22
+BRG-1049,Bagalkot,15
+BRG-1049,Belgaum WH,58
+BRG-1049,Hubli WH,45
+BRG-1058,Gokak,3
+BRG-1058,Belgaum,57
+BRG-1058,Hubli,4
+BRG-1058,Dharwad,25
+BRG-1058,Bijapur,2
+BRG-1058,Bagalkot,16
+BRG-1058,Belgaum WH,38
+BRG-1058,Hubli WH,14
+BRG-1064,Gokak,21
+BRG-1064,Belgaum,32
+BRG-1064,Hubli,17
+BRG-1064,Dharwad,9
+BRG-1064,Bijapur,45
+BRG-1064,Bagalkot,13
+BRG-1064,Belgaum WH,20
+BRG-1064,Hubli WH,69
+BRG-1075,Gokak,3
+BRG-1075,Belgaum,20
+BRG-1075,Hubli,2
+BRG-1075,Dharwad,24
+BRG-1075,Bijapur,14
+BRG-1075,Bagalkot,2
+BRG-1075,Belgaum WH,58
+BRG-1075,Hubli WH,56
+BRG-1081,Gokak,7
+BRG-1081,Belgaum,2
+BRG-1081,Hubli,63
+BRG-1081,Dharwad,22
+BRG-1081,Bijapur,4
+BRG-1081,Bagalkot,17
+BRG-1081,Belgaum WH,19
+BRG-1081,Hubli WH,28
+BRG-1086,Gokak,6
+BRG-1086,Belgaum,12
+BRG-1086,Hubli,3
+BRG-1086,Dharwad,15
+BRG-1086,Bijapur,1
+BRG-1086,Bagalkot,24
+BRG-1086,Belgaum WH,53
+BRG-1086,Hubli WH,20
+BRG-1092,Gokak,23
+BRG-1092,Belgaum,2
+BRG-1092,Hubli,4
+BRG-1092,Dharwad,26
+BRG-1092,Bijapur,6
+BRG-1092,Bagalkot,15
+BRG-1092,Belgaum WH,45
+BRG-1092,Hubli WH,29
+BRG-1099,Gokak,50
+BRG-1099,Belgaum,14
+BRG-1099,Hubli,0
+BRG-1099,Dharwad,17
+BRG-1099,Bijapur,0
+BRG-1099,Bagalkot,6
+BRG-1099,Belgaum WH,44
+BRG-1099,Hubli WH,70
+BRG-2207,Gokak,0
+BRG-2207,Belgaum,1
+BRG-2207,Hubli,4
+BRG-2207,Dharwad,5
+BRG-2207,Bijapur,180
+BRG-2207,Bagalkot,1
+BRG-2207,Belgaum WH,60
+BRG-2207,Hubli WH,55
+CLT-1004,Gokak,13
+CLT-1004,Belgaum,75
+CLT-1004,Hubli,12
+CLT-1004,Dharwad,6
+CLT-1004,Bijapur,9
+CLT-1004,Bagalkot,8
+CLT-1004,Belgaum WH,13
+CLT-1004,Hubli WH,79
+CLT-1007,Gokak,15
+CLT-1007,Belgaum,10
+CLT-1007,Hubli,43
+CLT-1007,Dharwad,3
+CLT-1007,Bijapur,26
+CLT-1007,Bagalkot,16
+CLT-1007,Belgaum WH,77
+CLT-1007,Hubli WH,23
+CLT-1016,Gokak,25
+CLT-1016,Belgaum,1
+CLT-1016,Hubli,41
+CLT-1016,Dharwad,2
+CLT-1016,Bijapur,8
+CLT-1016,Bagalkot,2
+CLT-1016,Belgaum WH,53
+CLT-1016,Hubli WH,71
+CLT-1021,Gokak,2
+CLT-1021,Belgaum,14
+CLT-1021,Hubli,16
+CLT-1021,Dharwad,34
+CLT-1021,Bijapur,17
+CLT-1021,Bagalkot,4
+CLT-1021,Belgaum WH,32
+CLT-1021,Hubli WH,42
+CLT-1028,Gokak,9
+CLT-1028,Belgaum,10
+CLT-1028,Hubli,3
+CLT-1028,Dharwad,40
+CLT-1028,Bijapur,1
+CLT-1028,Bagalkot,3
+CLT-1028,Belgaum WH,44
+CLT-1028,Hubli WH,71
+CLT-1037,Gokak,2
+CLT-1037,Belgaum,12
+CLT-1037,Hubli,24
+CLT-1037,Dharwad,11
+CLT-1037,Bijapur,0
+CLT-1037,Bagalkot,4
+CLT-1037,Belgaum WH,32
+CLT-1037,Hubli WH,26
+CLT-1044,Gokak,17
+CLT-1044,Belgaum,16
+CLT-1044,Hubli,2
+CLT-1044,Dharwad,3
+CLT-1044,Bijapur,9
+CLT-1044,Bagalkot,10
+CLT-1044,Belgaum WH,13
+CLT-1044,Hubli WH,11
+CLT-1053,Gokak,4
+CLT-1053,Belgaum,8
+CLT-1053,Hubli,5
+CLT-1053,Dharwad,6
+CLT-1053,Bijapur,33
+CLT-1053,Bagalkot,2
+CLT-1053,Belgaum WH,13
+CLT-1053,Hubli WH,58
+CLT-1057,Gokak,4
+CLT-1057,Belgaum,27
+CLT-1057,Hubli,15
+CLT-1057,Dharwad,50
+CLT-1057,Bijapur,0
+CLT-1057,Bagalkot,12
+CLT-1057,Belgaum WH,40
+CLT-1057,Hubli WH,19
+CLT-1068,Gokak,1
+CLT-1068,Belgaum,2
+CLT-1068,Hubli,21
+CLT-1068,Dharwad,26
+CLT-1068,Bijapur,0
+CLT-1068,Bagalkot,17
+CLT-1068,Belgaum WH,70
+CLT-1068,Hubli WH,59
+CLT-1074,Gokak,20
+CLT-1074,Belgaum,13
+CLT-1074,Hubli,10
+CLT-1074,Dharwad,9
+CLT-1074,Bijapur,0
+CLT-1074,Bagalkot,2
+CLT-1074,Belgaum WH,17
+CLT-1074,Hubli WH,70
+CLT-1081,Gokak,3
+CLT-1081,Belgaum,15
+CLT-1081,Hubli,2
+CLT-1081,Dharwad,14
+CLT-1081,Bijapur,1
+CLT-1081,Bagalkot,12
+CLT-1081,Belgaum WH,51
+CLT-1081,Hubli WH,69
+CLT-1089,Gokak,3
+CLT-1089,Belgaum,41
+CLT-1089,Hubli,3
+CLT-1089,Dharwad,15
+CLT-1089,Bijapur,15
+CLT-1089,Bagalkot,3
+CLT-1089,Belgaum WH,46
+CLT-1089,Hubli WH,41
+CLT-1092,Gokak,0
+CLT-1092,Belgaum,19
+CLT-1092,Hubli,0
+CLT-1092,Dharwad,30
+CLT-1092,Bijapur,2
+CLT-1092,Bagalkot,1
+CLT-1092,Belgaum WH,51
+CLT-1092,Hubli WH,72
+CLT-1099,Gokak,40
+CLT-1099,Belgaum,29
+CLT-1099,Hubli,31
+CLT-1099,Dharwad,12
+CLT-1099,Bijapur,11
+CLT-1099,Bagalkot,19
+CLT-1099,Belgaum WH,72
+CLT-1099,Hubli WH,39
+CLT-6120,Gokak,4
+CLT-6120,Belgaum,22
+CLT-6120,Hubli,22
+CLT-6120,Dharwad,22
+CLT-6120,Bijapur,22
+CLT-6120,Bagalkot,22
+CLT-6120,Belgaum WH,0
+CLT-6120,Hubli WH,0
+ELE-1000,Gokak,37
+ELE-1000,Belgaum,8
+ELE-1000,Hubli,10
+ELE-1000,Dharwad,32
+ELE-1000,Bijapur,6
+ELE-1000,Bagalkot,11
+ELE-1000,Belgaum WH,47
+ELE-1000,Hubli WH,15
+ELE-1010,Gokak,62
+ELE-1010,Belgaum,11
+ELE-1010,Hubli,39
+ELE-1010,Dharwad,11
+ELE-1010,Bijapur,18
+ELE-1010,Bagalkot,14
+ELE-1010,Belgaum WH,34
+ELE-1010,Hubli WH,77
+ELE-1018,Gokak,18
+ELE-1018,Belgaum,1
+ELE-1018,Hubli,3
+ELE-1018,Dharwad,4
+ELE-1018,Bijapur,0
+ELE-1018,Bagalkot,49
+ELE-1018,Belgaum WH,22
+ELE-1018,Hubli WH,54
+ELE-1023,Gokak,0
+ELE-1023,Belgaum,15
+ELE-1023,Hubli,0
+ELE-1023,Dharwad,5
+ELE-1023,Bijapur,13
+ELE-1023,Bagalkot,18
+ELE-1023,Belgaum WH,20
+ELE-1023,Hubli WH,23
+ELE-1030,Gokak,7
+ELE-1030,Belgaum,11
+ELE-1030,Hubli,8
+ELE-1030,Dharwad,7
+ELE-1030,Bijapur,2
+ELE-1030,Bagalkot,17
+ELE-1030,Belgaum WH,67
+ELE-1030,Hubli WH,11
+ELE-1039,Gokak,0
+ELE-1039,Belgaum,32
+ELE-1039,Hubli,11
+ELE-1039,Dharwad,0
+ELE-1039,Bijapur,1
+ELE-1039,Bagalkot,2
+ELE-1039,Belgaum WH,22
+ELE-1039,Hubli WH,49
+ELE-1044,Gokak,25
+ELE-1044,Belgaum,3
+ELE-1044,Hubli,13
+ELE-1044,Dharwad,7
+ELE-1044,Bijapur,5
+ELE-1044,Bagalkot,20
+ELE-1044,Belgaum WH,35
+ELE-1044,Hubli WH,72
+ELE-1051,Gokak,3
+ELE-1051,Belgaum,4
+ELE-1051,Hubli,0
+ELE-1051,Dharwad,10
+ELE-1051,Bijapur,2
+ELE-1051,Bagalkot,2
+ELE-1051,Belgaum WH,23
+ELE-1051,Hubli WH,19
+ELE-1057,Gokak,13
+ELE-1057,Belgaum,1
+ELE-1057,Hubli,3
+ELE-1057,Dharwad,2
+ELE-1057,Bijapur,0
+ELE-1057,Bagalkot,6
+ELE-1057,Belgaum WH,37
+ELE-1057,Hubli WH,61
+ELE-1067,Gokak,6
+ELE-1067,Belgaum,1
+ELE-1067,Hubli,5
+ELE-1067,Dharwad,3
+ELE-1067,Bijapur,1
+ELE-1067,Bagalkot,8
+ELE-1067,Belgaum WH,50
+ELE-1067,Hubli WH,39
+ELE-1073,Gokak,18
+ELE-1073,Belgaum,3
+ELE-1073,Hubli,8
+ELE-1073,Dharwad,5
+ELE-1073,Bijapur,2
+ELE-1073,Bagalkot,1
+ELE-1073,Belgaum WH,67
+ELE-1073,Hubli WH,33
+ELE-1079,Gokak,3
+ELE-1079,Belgaum,1
+ELE-1079,Hubli,17
+ELE-1079,Dharwad,3
+ELE-1079,Bijapur,1
+ELE-1079,Bagalkot,12
+ELE-1079,Belgaum WH,34
+ELE-1079,Hubli WH,33
+ELE-1086,Gokak,3
+ELE-1086,Belgaum,1
+ELE-1086,Hubli,40
+ELE-1086,Dharwad,12
+ELE-1086,Bijapur,3
+ELE-1086,Bagalkot,9
+ELE-1086,Belgaum WH,56
+ELE-1086,Hubli WH,53
+ELE-1092,Gokak,9
+ELE-1092,Belgaum,11
+ELE-1092,Hubli,19
+ELE-1092,Dharwad,6
+ELE-1092,Bijapur,1
+ELE-1092,Bagalkot,3
+ELE-1092,Belgaum WH,25
+ELE-1092,Hubli WH,69
+ELE-1100,Gokak,35
+ELE-1100,Belgaum,8
+ELE-1100,Hubli,9
+ELE-1100,Dharwad,19
+ELE-1100,Bijapur,0
+ELE-1100,Bagalkot,3
+ELE-1100,Belgaum WH,16
+ELE-1100,Hubli WH,79
+FLT-1001,Gokak,3
+FLT-1001,Belgaum,13
+FLT-1001,Hubli,1
+FLT-1001,Dharwad,12
+FLT-1001,Bijapur,22
+FLT-1001,Bagalkot,19
+FLT-1001,Belgaum WH,64
+FLT-1001,Hubli WH,79
+FLT-1009,Gokak,14
+FLT-1009,Belgaum,35
+FLT-1009,Hubli,36
+FLT-1009,Dharwad,1
+FLT-1009,Bijapur,68
+FLT-1009,Bagalkot,24
+FLT-1009,Belgaum WH,53
+FLT-1009,Hubli WH,44
+FLT-1016,Gokak,7
+FLT-1016,Belgaum,13
+FLT-1016,Hubli,5
+FLT-1016,Dharwad,43
+FLT-1016,Bijapur,44
+FLT-1016,Bagalkot,2
+FLT-1016,Belgaum WH,48
+FLT-1016,Hubli WH,41
+FLT-1021,Gokak,8
+FLT-1021,Belgaum,40
+FLT-1021,Hubli,2
+FLT-1021,Dharwad,30
+FLT-1021,Bijapur,12
+FLT-1021,Bagalkot,15
+FLT-1021,Belgaum WH,0
+FLT-1021,Hubli WH,0
+FLT-1022,Gokak,3
+FLT-1022,Belgaum,45
+FLT-1022,Hubli,1
+FLT-1022,Dharwad,27
+FLT-1022,Bijapur,1
+FLT-1022,Bagalkot,15
+FLT-1022,Belgaum WH,61
+FLT-1022,Hubli WH,54
+FLT-1032,Gokak,22
+FLT-1032,Belgaum,2
+FLT-1032,Hubli,25
+FLT-1032,Dharwad,9
+FLT-1032,Bijapur,4
+FLT-1032,Bagalkot,11
+FLT-1032,Belgaum WH,66
+FLT-1032,Hubli WH,38
+FLT-1037,Gokak,20
+FLT-1037,Belgaum,28
+FLT-1037,Hubli,28
+FLT-1037,Dharwad,24
+FLT-1037,Bijapur,16
+FLT-1037,Bagalkot,7
+FLT-1037,Belgaum WH,36
+FLT-1037,Hubli WH,11
+FLT-1045,Gokak,44
+FLT-1045,Belgaum,46
+FLT-1045,Hubli,14
+FLT-1045,Dharwad,6
+FLT-1045,Bijapur,5
+FLT-1045,Bagalkot,4
+FLT-1045,Belgaum WH,37
+FLT-1045,Hubli WH,11
+FLT-1053,Gokak,3
+FLT-1053,Belgaum,10
+FLT-1053,Hubli,8
+FLT-1053,Dharwad,38
+FLT-1053,Bijapur,40
+FLT-1053,Bagalkot,2
+FLT-1053,Belgaum WH,50
+FLT-1053,Hubli WH,63
+FLT-1056,Gokak,10
+FLT-1056,Belgaum,4
+FLT-1056,Hubli,5
+FLT-1056,Dharwad,2
+FLT-1056,Bijapur,7
+FLT-1056,Bagalkot,49
+FLT-1056,Belgaum WH,15
+FLT-1056,Hubli WH,66
+FLT-1063,Gokak,1
+FLT-1063,Belgaum,5
+FLT-1063,Hubli,8
+FLT-1063,Dharwad,1
+FLT-1063,Bijapur,15
+FLT-1063,Bagalkot,60
+FLT-1063,Belgaum WH,65
+FLT-1063,Hubli WH,55
+FLT-1074,Gokak,3
+FLT-1074,Belgaum,1
+FLT-1074,Hubli,16
+FLT-1074,Dharwad,5
+FLT-1074,Bijapur,23
+FLT-1074,Bagalkot,52
+FLT-1074,Belgaum WH,59
+FLT-1074,Hubli WH,40
+FLT-1079,Gokak,3
+FLT-1079,Belgaum,26
+FLT-1079,Hubli,9
+FLT-1079,Dharwad,3
+FLT-1079,Bijapur,20
+FLT-1079,Bagalkot,6
+FLT-1079,Belgaum WH,16
+FLT-1079,Hubli WH,44
+FLT-1086,Gokak,8
+FLT-1086,Belgaum,66
+FLT-1086,Hubli,2
+FLT-1086,Dharwad,3
+FLT-1086,Bijapur,20
+FLT-1086,Bagalkot,12
+FLT-1086,Belgaum WH,22
+FLT-1086,Hubli WH,34
+FLT-1093,Gokak,2
+FLT-1093,Belgaum,1
+FLT-1093,Hubli,3
+FLT-1093,Dharwad,27
+FLT-1093,Bijapur,10
+FLT-1093,Bagalkot,27
+FLT-1093,Belgaum WH,24
+FLT-1093,Hubli WH,59
+FLT-1098,Gokak,18
+FLT-1098,Belgaum,25
+FLT-1098,Hubli,14
+FLT-1098,Dharwad,2
+FLT-1098,Bijapur,8
+FLT-1098,Bagalkot,18
+FLT-1098,Belgaum WH,29
+FLT-1098,Hubli WH,37
+HYD-1004,Gokak,26
+HYD-1004,Belgaum,28
+HYD-1004,Hubli,3
+HYD-1004,Dharwad,15
+HYD-1004,Bijapur,8
+HYD-1004,Bagalkot,3
+HYD-1004,Belgaum WH,31
+HYD-1004,Hubli WH,20
+HYD-1012,Gokak,34
+HYD-1012,Belgaum,32
+HYD-1012,Hubli,6
+HYD-1012,Dharwad,1
+HYD-1012,Bijapur,0
+HYD-1012,Bagalkot,24
+HYD-1012,Belgaum WH,46
+HYD-1012,Hubli WH,73
+HYD-1016,Gokak,30
+HYD-1016,Belgaum,35
+HYD-1016,Hubli,27
+HYD-1016,Dharwad,1
+HYD-1016,Bijapur,13
+HYD-1016,Bagalkot,28
+HYD-1016,Belgaum WH,26
+HYD-1016,Hubli WH,64
+HYD-1024,Gokak,1
+HYD-1024,Belgaum,33
+HYD-1024,Hubli,24
+HYD-1024,Dharwad,25
+HYD-1024,Bijapur,38
+HYD-1024,Bagalkot,112
+HYD-1024,Belgaum WH,28
+HYD-1024,Hubli WH,72
+HYD-1028,Gokak,20
+HYD-1028,Belgaum,7
+HYD-1028,Hubli,18
+HYD-1028,Dharwad,0
+HYD-1028,Bijapur,34
+HYD-1028,Bagalkot,61
+HYD-1028,Belgaum WH,23
+HYD-1028,Hubli WH,16
+HYD-1038,Gokak,12
+HYD-1038,Belgaum,9
+HYD-1038,Hubli,0
+HYD-1038,Dharwad,76
+HYD-1038,Bijapur,2
+HYD-1038,Bagalkot,0
+HYD-1038,Belgaum WH,78
+HYD-1038,Hubli WH,60
+HYD-1042,Gokak,3
+HYD-1042,Belgaum,13
+HYD-1042,Hubli,3
+HYD-1042,Dharwad,7
+HYD-1042,Bijapur,67
+HYD-1042,Bagalkot,41
+HYD-1042,Belgaum WH,34
+HYD-1042,Hubli WH,69
+HYD-1051,Gokak,3
+HYD-1051,Belgaum,0
+HYD-1051,Hubli,0
+HYD-1051,Dharwad,26
+HYD-1051,Bijapur,9
+HYD-1051,Bagalkot,16
+HYD-1051,Belgaum WH,27
+HYD-1051,Hubli WH,18
+HYD-1061,Gokak,1
+HYD-1061,Belgaum,12
+HYD-1061,Hubli,3
+HYD-1061,Dharwad,0
+HYD-1061,Bijapur,1
+HYD-1061,Bagalkot,3
+HYD-1061,Belgaum WH,13
+HYD-1061,Hubli WH,30
+HYD-1063,Gokak,2
+HYD-1063,Belgaum,7
+HYD-1063,Hubli,4
+HYD-1063,Dharwad,14
+HYD-1063,Bijapur,40
+HYD-1063,Bagalkot,3
+HYD-1063,Belgaum WH,41
+HYD-1063,Hubli WH,39
+HYD-1074,Gokak,32
+HYD-1074,Belgaum,13
+HYD-1074,Hubli,0
+HYD-1074,Dharwad,7
+HYD-1074,Bijapur,5
+HYD-1074,Bagalkot,17
+HYD-1074,Belgaum WH,19
+HYD-1074,Hubli WH,16
+HYD-1081,Gokak,5
+HYD-1081,Belgaum,13
+HYD-1081,Hubli,12
+HYD-1081,Dharwad,19
+HYD-1081,Bijapur,1
+HYD-1081,Bagalkot,3
+HYD-1081,Belgaum WH,74
+HYD-1081,Hubli WH,50
+HYD-1089,Gokak,29
+HYD-1089,Belgaum,3
+HYD-1089,Hubli,8
+HYD-1089,Dharwad,3
+HYD-1089,Bijapur,3
+HYD-1089,Bagalkot,1
+HYD-1089,Belgaum WH,62
+HYD-1089,Hubli WH,15
+HYD-1095,Gokak,3
+HYD-1095,Belgaum,25
+HYD-1095,Hubli,18
+HYD-1095,Dharwad,38
+HYD-1095,Bijapur,0
+HYD-1095,Bagalkot,16
+HYD-1095,Belgaum WH,63
+HYD-1095,Hubli WH,76
+HYD-1098,Gokak,10
+HYD-1098,Belgaum,13
+HYD-1098,Hubli,13
+HYD-1098,Dharwad,1
+HYD-1098,Bijapur,15
+HYD-1098,Bagalkot,25
+HYD-1098,Belgaum WH,24
+HYD-1098,Hubli WH,70
+PMP-1002,Gokak,1
+PMP-1002,Belgaum,3
+PMP-1002,Hubli,6
+PMP-1002,Dharwad,28
+PMP-1002,Bijapur,3
+PMP-1002,Bagalkot,12
+PMP-1002,Belgaum WH,47
+PMP-1002,Hubli WH,28
+PMP-1009,Gokak,8
+PMP-1009,Belgaum,5
+PMP-1009,Hubli,14
+PMP-1009,Dharwad,37
+PMP-1009,Bijapur,51
+PMP-1009,Bagalkot,9
+PMP-1009,Belgaum WH,31
+PMP-1009,Hubli WH,58
+PMP-1019,Gokak,7
+PMP-1019,Belgaum,5
+PMP-1019,Hubli,18
+PMP-1019,Dharwad,0
+PMP-1019,Bijapur,1
+PMP-1019,Bagalkot,6
+PMP-1019,Belgaum WH,55
+PMP-1019,Hubli WH,79
+PMP-1023,Gokak,20
+PMP-1023,Belgaum,3
+PMP-1023,Hubli,58
+PMP-1023,Dharwad,20
+PMP-1023,Bijapur,18
+PMP-1023,Bagalkot,5
+PMP-1023,Belgaum WH,38
+PMP-1023,Hubli WH,25
+PMP-1032,Gokak,3
+PMP-1032,Belgaum,1
+PMP-1032,Hubli,11
+PMP-1032,Dharwad,28
+PMP-1032,Bijapur,15
+PMP-1032,Bagalkot,3
+PMP-1032,Belgaum WH,37
+PMP-1032,Hubli WH,14
+PMP-1036,Gokak,8
+PMP-1036,Belgaum,5
+PMP-1036,Hubli,3
+PMP-1036,Dharwad,24
+PMP-1036,Bijapur,2
+PMP-1036,Bagalkot,19
+PMP-1036,Belgaum WH,33
+PMP-1036,Hubli WH,42
+PMP-1043,Gokak,13
+PMP-1043,Belgaum,10
+PMP-1043,Hubli,1
+PMP-1043,Dharwad,26
+PMP-1043,Bijapur,1
+PMP-1043,Bagalkot,10
+PMP-1043,Belgaum WH,77
+PMP-1043,Hubli WH,40
+PMP-1052,Gokak,42
+PMP-1052,Belgaum,0
+PMP-1052,Hubli,15
+PMP-1052,Dharwad,2
+PMP-1052,Bijapur,3
+PMP-1052,Bagalkot,8
+PMP-1052,Belgaum WH,66
+PMP-1052,Hubli WH,62
+PMP-1056,Gokak,8
+PMP-1056,Belgaum,22
+PMP-1056,Hubli,21
+PMP-1056,Dharwad,12
+PMP-1056,Bijapur,2
+PMP-1056,Bagalkot,0
+PMP-1056,Belgaum WH,70
+PMP-1056,Hubli WH,15
+PMP-1063,Gokak,1
+PMP-1063,Belgaum,0
+PMP-1063,Hubli,23
+PMP-1063,Dharwad,29
+PMP-1063,Bijapur,13
+PMP-1063,Bagalkot,4
+PMP-1063,Belgaum WH,52
+PMP-1063,Hubli WH,78
+PMP-1075,Gokak,18
+PMP-1075,Belgaum,15
+PMP-1075,Hubli,2
+PMP-1075,Dharwad,2
+PMP-1075,Bijapur,21
+PMP-1075,Bagalkot,3
+PMP-1075,Belgaum WH,74
+PMP-1075,Hubli WH,35
+PMP-1079,Gokak,20
+PMP-1079,Belgaum,1
+PMP-1079,Hubli,22
+PMP-1079,Dharwad,16
+PMP-1079,Bijapur,9
+PMP-1079,Bagalkot,3
+PMP-1079,Belgaum WH,51
+PMP-1079,Hubli WH,67
+PMP-1089,Gokak,2
+PMP-1089,Belgaum,2
+PMP-1089,Hubli,39
+PMP-1089,Dharwad,9
+PMP-1089,Bijapur,31
+PMP-1089,Bagalkot,9
+PMP-1089,Belgaum WH,45
+PMP-1089,Hubli WH,48
+PMP-1091,Gokak,48
+PMP-1091,Belgaum,8
+PMP-1091,Hubli,21
+PMP-1091,Dharwad,40
+PMP-1091,Bijapur,26
+PMP-1091,Bagalkot,0
+PMP-1091,Belgaum WH,52
+PMP-1091,Hubli WH,46
+PMP-1098,Gokak,1
+PMP-1098,Belgaum,0
+PMP-1098,Hubli,15
+PMP-1098,Dharwad,4
+PMP-1098,Bijapur,14
+PMP-1098,Bagalkot,31
+PMP-1098,Belgaum WH,57
+PMP-1098,Hubli WH,12
+PMP-5012,Gokak,30
+PMP-5012,Belgaum,45
+PMP-5012,Hubli,6
+PMP-5012,Dharwad,3
+PMP-5012,Bijapur,71
+PMP-5012,Bagalkot,14
+PMP-5012,Belgaum WH,52
+PMP-5012,Hubli WH,60
+SEL-1002,Gokak,1
+SEL-1002,Belgaum,58
+SEL-1002,Hubli,18
+SEL-1002,Dharwad,31
+SEL-1002,Bijapur,2
+SEL-1002,Bagalkot,21
+SEL-1002,Belgaum WH,30
+SEL-1002,Hubli WH,26
+SEL-1008,Gokak,22
+SEL-1008,Belgaum,39
+SEL-1008,Hubli,10
+SEL-1008,Dharwad,1
+SEL-1008,Bijapur,6
+SEL-1008,Bagalkot,2
+SEL-1008,Belgaum WH,47
+SEL-1008,Hubli WH,25
+SEL-1014,Gokak,9
+SEL-1014,Belgaum,2
+SEL-1014,Hubli,35
+SEL-1014,Dharwad,7
+SEL-1014,Bijapur,4
+SEL-1014,Bagalkot,1
+SEL-1014,Belgaum WH,78
+SEL-1014,Hubli WH,39
+SEL-1024,Gokak,13
+SEL-1024,Belgaum,12
+SEL-1024,Hubli,5
+SEL-1024,Dharwad,0
+SEL-1024,Bijapur,5
+SEL-1024,Bagalkot,3
+SEL-1024,Belgaum WH,15
+SEL-1024,Hubli WH,37
+SEL-1029,Gokak,27
+SEL-1029,Belgaum,27
+SEL-1029,Hubli,4
+SEL-1029,Dharwad,4
+SEL-1029,Bijapur,8
+SEL-1029,Bagalkot,10
+SEL-1029,Belgaum WH,54
+SEL-1029,Hubli WH,53
+SEL-1037,Gokak,6
+SEL-1037,Belgaum,42
+SEL-1037,Hubli,37
+SEL-1037,Dharwad,14
+SEL-1037,Bijapur,48
+SEL-1037,Bagalkot,10
+SEL-1037,Belgaum WH,62
+SEL-1037,Hubli WH,73
+SEL-1042,Gokak,22
+SEL-1042,Belgaum,3
+SEL-1042,Hubli,23
+SEL-1042,Dharwad,27
+SEL-1042,Bijapur,40
+SEL-1042,Bagalkot,32
+SEL-1042,Belgaum WH,63
+SEL-1042,Hubli WH,45
+SEL-1052,Gokak,3
+SEL-1052,Belgaum,1
+SEL-1052,Hubli,9
+SEL-1052,Dharwad,1
+SEL-1052,Bijapur,4
+SEL-1052,Bagalkot,19
+SEL-1052,Belgaum WH,46
+SEL-1052,Hubli WH,30
+SEL-1059,Gokak,1
+SEL-1059,Belgaum,5
+SEL-1059,Hubli,0
+SEL-1059,Dharwad,3
+SEL-1059,Bijapur,3
+SEL-1059,Bagalkot,5
+SEL-1059,Belgaum WH,26
+SEL-1059,Hubli WH,48
+SEL-1068,Gokak,6
+SEL-1068,Belgaum,24
+SEL-1068,Hubli,13
+SEL-1068,Dharwad,13
+SEL-1068,Bijapur,34
+SEL-1068,Bagalkot,9
+SEL-1068,Belgaum WH,21
+SEL-1068,Hubli WH,46
+SEL-1070,Gokak,6
+SEL-1070,Belgaum,3
+SEL-1070,Hubli,21
+SEL-1070,Dharwad,3
+SEL-1070,Bijapur,19
+SEL-1070,Bagalkot,8
+SEL-1070,Belgaum WH,19
+SEL-1070,Hubli WH,43
+SEL-1077,Gokak,22
+SEL-1077,Belgaum,1
+SEL-1077,Hubli,16
+SEL-1077,Dharwad,0
+SEL-1077,Bijapur,2
+SEL-1077,Bagalkot,3
+SEL-1077,Belgaum WH,36
+SEL-1077,Hubli WH,40
+SEL-1085,Gokak,39
+SEL-1085,Belgaum,18
+SEL-1085,Hubli,3
+SEL-1085,Dharwad,1
+SEL-1085,Bijapur,8
+SEL-1085,Bagalkot,41
+SEL-1085,Belgaum WH,37
+SEL-1085,Hubli WH,49
+SEL-1096,Gokak,7
+SEL-1096,Belgaum,1
+SEL-1096,Hubli,17
+SEL-1096,Dharwad,8
+SEL-1096,Bijapur,39
+SEL-1096,Bagalkot,9
+SEL-1096,Belgaum WH,16
+SEL-1096,Hubli WH,45
+SEL-1098,Gokak,0
+SEL-1098,Belgaum,1
+SEL-1098,Hubli,2
+SEL-1098,Dharwad,4
+SEL-1098,Bijapur,2
+SEL-1098,Bagalkot,20
+SEL-1098,Belgaum WH,31
+SEL-1098,Hubli WH,58
+SEL-3310,Gokak,37
+SEL-3310,Belgaum,47
+SEL-3310,Hubli,5
+SEL-3310,Dharwad,14
+SEL-3310,Bijapur,2
+SEL-3310,Bagalkot,0
+SEL-3310,Belgaum WH,0
+SEL-3310,Hubli WH,0
