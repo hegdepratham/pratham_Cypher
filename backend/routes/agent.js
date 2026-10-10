@@ -32,8 +32,11 @@ router.post('/analyze', rateLimit({ windowMs: 60 * 1000, max: 6 }), async (req, 
           if (text) saved[i] = repo.setExplanation(action.id, text);
         })
       );
+
       results.forEach((r) => {
-        if (r.status === 'rejected') console.error('explain failed:', r.reason && r.reason.message);
+        if (r.status === 'rejected') {
+          console.error('explain failed:', r.reason && r.reason.message);
+        }
       });
     }
 
@@ -45,8 +48,14 @@ router.post('/analyze', rateLimit({ windowMs: 60 * 1000, max: 6 }), async (req, 
 
 router.post('/ask', rateLimit({ windowMs: 60 * 1000, max: 15 }), async (req, res) => {
   const q = req.body && typeof req.body.question === 'string' ? req.body.question.trim() : '';
-  if (!q) return res.status(400).json({ error: 'question is required' });
-  if (q.length > 300) return res.status(400).json({ error: 'question must be 300 characters or fewer' });
+
+  if (!q) {
+    return res.status(400).json({ error: 'question is required' });
+  }
+
+  if (q.length > 300) {
+    return res.status(400).json({ error: 'question must be 300 characters or fewer' });
+  }
 
   try {
     const answer = await answerQuestion(q);
@@ -55,6 +64,7 @@ router.post('/ask', rateLimit({ windowMs: 60 * 1000, max: 15 }), async (req, res
     if (err && err.code === 'NO_KEY') {
       return res.status(503).json({ error: 'The ask box needs an AI key and none is set on the server.' });
     }
+
     console.error('ask failed:', err && err.status, err && err.message);
     res.status(502).json({ error: 'The AI service did not answer. Please try again in a moment.' });
   }

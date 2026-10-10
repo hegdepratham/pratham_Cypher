@@ -4,23 +4,21 @@ Cypher 2026 · Challenge 01: The Spare Parts Desk.
 
 An agent that reads Kaveri Spares & Hydraulics stock, sales, supplier and purchase-order data every morning, finds the problems that matter today, compares real options with numbers, and drafts a PO or transfer for the Head of Purchasing to approve or reject.
 
-- Live app: https://your-project.vercel.app
-- API health: https://your-service.onrender.com/api/health
-- Demo video: link
+## What is included
 
-![Dashboard on desktop](docs/screenshots/desktop-1280.png)
+- Deterministic agent engine with stockout, demand-change, overdue-PO, and slow-moving detections
+- Transfer-before-buy logic with option comparison and rationale
+- SQLite-backed backend API and action approval flow
+- Groq-powered explanation layer with grounded-number validation
+- Ask-the-agent feature using a data pack and guardrails
+- Frontend dashboard for viewing scheduled actions and decisions
+- Docker and CI setup for deployment preparation
 
-## How it works
-
-1. A deterministic engine (plain JavaScript, no AI) observes the data, computes demand rate, days of stock and runway, checks for a transfer from another store first, then compares every supplier on price × lead time × MOQ × cost of lost sales, and picks one. Same data in, same answer out. It is unit-tested.
-2. An AI layer (Groq, Llama 3.3 70B) only explains what the engine decided in plain English, and answers questions in the Ask box. Every number the AI writes is checked against the data; if it states a number that is not there, the answer is withheld.
-
-The agent loop: Observe (snapshot.js) → Reason + Evaluate + Decide (detectors/*) → Rank (engine.js) → Act (drafts a pending action) → Explain (explain.js) → a person approves or rejects.
-
-## Run it locally
+## Run locally
 
 ```bash
-git clone https://github.com/<you>/teamname_Cypher.git && cd teamname_Cypher
+git clone https://github.com/hegdepratham/pratham_Cypher.git
+cd pratham_Cypher
 
 cd backend
 cp .env.example .env
@@ -36,37 +34,32 @@ npm run dev
 
 ## Environment variables
 
-| Variable | Purpose |
-|---|---|
-| PORT | API port |
-| FRONTEND_ORIGIN | Allowed browser origin(s) |
-| DB_PATH | SQLite file path |
-| GROQ_API_KEY | Groq key |
-| GROQ_MODEL | Model id |
-| ADMIN_TOKEN | Secret for reset endpoint |
-| VITE_API_URL | backend URL |
-| VITE_USE_MOCK | true/false |
+Backend (`backend/.env`):
+- `PORT=4000`
+- `FRONTEND_ORIGIN=http://localhost:5173`
+- `DB_PATH=` (optional)
+- `GROQ_API_KEY=`
+- `GROQ_MODEL=openai/gpt-oss-120b`
+- `ADMIN_TOKEN=`
 
-## API
+Frontend (`frontend/.env`):
+- `VITE_API_URL=http://localhost:4000`
+- `VITE_USE_MOCK=false`
 
-| Method | Path | Purpose |
-|---|---|---|
-| GET | /api/health | health check |
-| GET | /api/products | products |
-| GET | /api/inventory | stock |
-| GET | /api/sales | sales |
-| GET | /api/suppliers | suppliers |
-| GET | /api/purchase-orders | purchase orders |
-| POST | /api/agent/analyze | run agent |
-| GET | /api/actions | action history |
-| POST | /api/actions/:id/approve | approve |
-| POST | /api/actions/:id/reject | reject |
-| POST | /api/agent/ask | grounded question answer |
+## Core endpoints
 
-## Security
+- `GET /api/health`
+- `GET /api/products`
+- `GET /api/inventory`
+- `GET /api/sales`
+- `GET /api/suppliers`
+- `GET /api/purchase-orders`
+- `POST /api/agent/analyze`
+- `POST /api/agent/ask`
+- `GET /api/actions`
+- `POST /api/actions/:id/approve`
+- `POST /api/actions/:id/reject`
 
-Keys only in environment variables, CORS limited, parameterised SQL only, rate limits, security headers, and no automatic execution.
+## Deployment note
 
-## Team
-
-Backend & data · Agent engine · Frontend · AI & deployment
+The app is structured for deployment on Render (backend) and Vercel (frontend), with env vars configured separately and no secrets committed to the repo.
