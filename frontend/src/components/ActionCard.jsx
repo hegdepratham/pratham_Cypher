@@ -1,110 +1,58 @@
-import DecisionBar from './DecisionBar'
-import { useState } from 'react'
-import { SeverityBadge, EDGE } from './ui'
-import EvidenceStrip from './EvidenceStrip'
-import OptionsCompare from './OptionsCompare'
-import DraftSlip from './DraftSlip'
-import { KIND_LABEL } from '../lib/labels'
+import { Button, EDGE, SeverityBadge } from './ui';
+import EvidenceStrip from './EvidenceStrip';
+import OptionsCompare from './OptionsCompare';
+import DraftSlip from './DraftSlip';
+import { KIND_LABEL, TYPE_LABEL } from '../lib/labels';
 
-export default function ActionCard({
-  action,
-  position,
-  defaultOpen = false,
-  onDecide,
-}) {
-  const { id, type, sku, details, explanation } = action
-  const evidence = action.evidence || {}
-  const [open, setOpen] = useState(defaultOpen)
-
-  const title = evidence.product?.name || sku
-
-  const subtitle = [
-    sku,
-    evidence.product?.machine_model,
-    evidence.location && `at ${evidence.location}`,
-  ]
-    .filter(Boolean)
-    .join(', ')
+export default function ActionCard({ action, onDecide, compact = false }) {
+  const evidence = action?.evidence || {};
+  const risk = evidence.severity || 'low';
+  const decision = evidence.decision || {};
 
   return (
-    <article
-      aria-labelledby={`action-${id}`}
-      className={`rounded-md border border-l-4 border-rule bg-white p-4 sm:p-6 ${
-        EDGE[evidence.severity] || 'border-l-steel'
-      }`}
-    >
-      <header className="flex items-start gap-4">
-        {position && (
-          <span className="font-display text-5xl font-bold leading-none text-steel">
-            <span className="sr-only">Priority </span>
-            {position}
-          </span>
-        )}
-
-        <div className="min-w-0 flex-1">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-            <SeverityBadge severity={evidence.severity} />
-            <span className="text-sm text-steel">
-              {KIND_LABEL[evidence.kind] || 'Needs a look'}
-            </span>
+    <article className={`rounded-md border border-rule bg-white p-4 sm:p-5 ${EDGE[risk] || EDGE.low} border-l-4`}>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="font-display text-3xl font-bold leading-none">{action?.evidence?.rank || 1}</span>
+            <h3 className="font-display text-3xl font-semibold leading-none">{action?.sku}</h3>
           </div>
-
-          <h3
-            id={`action-${id}`}
-            className="mt-2 break-words font-display text-2xl font-semibold leading-tight"
-          >
-            {title}
-          </h3>
-
-          <p className="mt-1 break-words text-sm text-steel">
-            {subtitle}
-          </p>
+          <p className="mt-2 text-sm text-steel">{action?.evidence?.product?.name || action?.sku} • {action?.evidence?.location || 'all locations'}</p>
         </div>
-      </header>
+        <div className="flex items-center gap-2">
+          <SeverityBadge severity={risk} />
+          <span className="text-xs uppercase tracking-[0.2em] text-steel">{TYPE_LABEL[action?.type] || 'Issue'}</span>
+        </div>
+      </div>
 
-      <p className="mt-4 max-w-prose leading-relaxed">
-        {explanation}
-      </p>
+      <div className="mt-4 flex items-center gap-2">
+        <span className="rounded-full bg-sheet px-2 py-1 text-xs font-semibold text-ink">{KIND_LABEL[evidence.kind] || evidence.kind}</span>
+      </div>
 
-      {evidence.decision?.unavoidable_gap && (
-        <p className="mt-4 rounded-md bg-high-tint p-3 text-sm font-medium text-high">
-          No option arrives before stock runs out. This one loses the fewest sales.
-        </p>
-      )}
+      <p className="mt-4 text-base text-ink">{action?.explanation || action?.reason || 'Issue detected.'}</p>
 
-      <button
-        type="button"
-        aria-expanded={open}
-        aria-controls={`numbers-${id}`}
-        onClick={() => setOpen(!open)}
-        className="mt-4 min-h-11 text-sm font-semibold text-hydraulic underline underline-offset-4"
-      >
-        {open ? 'Hide the numbers' : 'Show the numbers'}
-      </button>
+      <div className="mt-5">
+        <EvidenceStrip evidence={evidence} />
+      </div>
 
-      {open && (
-        <div id={`numbers-${id}`} className="mt-2 space-y-5">
-          <EvidenceStrip evidence={evidence} />
+      <div className="mt-5 space-y-4">
+        <OptionsCompare options={evidence.options || []} />
+        {decision.reason && (
+          <div className="rounded-md bg-sheet p-3 text-sm text-ink">
+            <p className="font-semibold">Decision</p>
+            <p className="mt-1">{decision.reason}</p>
+          </div>
+        )}
+      </div>
 
-          <OptionsCompare options={evidence.options} />
+      <DraftSlip action={action} />
 
-          {evidence.decision?.reason && (
-            <details className="text-sm">
-              <summary className="min-h-11 cursor-pointer py-2 font-semibold">
-                How the agent decided
-              </summary>
-              <p className="max-w-prose leading-relaxed text-steel">
-                {evidence.decision.reason}
-              </p>
-            </details>
-          )}
-
-         
-          <DraftSlip type={type} details={details} />
+      {!compact && (
+        <div className="mt-5 flex flex-wrap gap-3">
+          <Button onClick={() => onDecide(action.id, 'approve')}>Approve {action?.type === 'transfer' ? 'transfer' : action?.type === 'purchase_order' ? 'PO' : 'alert'}</Button>
+          <Button variant="secondary" onClick={() => onDecide(action.id, 'reject')}>Reject</Button>
         </div>
       )}
-
-      <DecisionBar id={id} type={type} onDecide={onDecide} />
     </article>
-  )
+  );
 }

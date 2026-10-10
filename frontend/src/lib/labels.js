@@ -4,10 +4,10 @@ export const KIND_LABEL = {
   overdue_po: 'Late purchase order',
   demand_change: 'Demand has shifted',
   slow_moving: 'Cash tied up in slow stock',
-}
+};
 
 export const TYPE_LABEL = {
   transfer: 'Transfer request',
   purchase_order: 'Purchase order',
   alert: 'Follow-up',
-}
+};

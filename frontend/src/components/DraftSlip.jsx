@@ -1,37 +1,26 @@
+import { formatDetail } from '../lib/format';
 
-import { Fragment } from 'react'
-import { labelFor, formatDetail } from '../lib/format'
-
-const TITLE = {
-  transfer: 'Draft transfer request',
-  purchase_order: 'Draft purchase order',
-  alert: 'Suggested follow-up',
-}
-
-export default function DraftSlip({ type, details = {} }) {
-  const rows = Object.entries(details)
-
-  if (!rows.length) return null
+export default function DraftSlip({ action }) {
+  const details = action?.details || {};
+  const entries = Object.entries(details);
 
   return (
-    <section
-      aria-label={TITLE[type] || 'Draft'}
-      className="mt-5 rounded-md border border-dashed border-steel bg-sheet p-4"
-    >
-      <h4 className="font-display text-lg font-semibold">
-        {TITLE[type] || 'Draft'}
-      </h4>
-
-      <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-6 gap-y-1 text-sm">
-        {rows.map(([key, value]) => (
-          <Fragment key={key}>
-            <dt className="text-steel">{labelFor(key)}</dt>
-            <dd className="min-w-0 break-words font-medium">
-              {formatDetail(key, value)}
-            </dd>
-          </Fragment>
+    <div className="mt-4 rounded-md border-2 border-dashed border-steel bg-sheet p-4">
+      <div className="flex items-center justify-between gap-3 border-b border-rule pb-2">
+        <div>
+          <p className="text-xs uppercase tracking-[0.2em] text-steel">Draft slip</p>
+          <h4 className="font-display text-2xl font-semibold">{action?.sku}</h4>
+        </div>
+        <span className="rounded-full bg-white px-2 py-1 text-xs font-semibold text-steel">{action?.type}</span>
+      </div>
+      <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+        {entries.map(([key, value]) => (
+          <div key={key} className="border-t border-rule pt-2">
+            <dt className="text-steel">{formatDetail(key, value)}</dt>
+            <dd className="font-semibold text-ink">{String(value)}</dd>
+          </div>
         ))}
       </dl>
-    </section>
-  )
+    </div>
+  );
 }
